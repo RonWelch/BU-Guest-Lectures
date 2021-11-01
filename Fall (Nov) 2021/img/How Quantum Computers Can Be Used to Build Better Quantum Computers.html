@@ -1,0 +1,2262 @@
+<!DOCTYPE html>
+<!--[if IE 8]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="td-md-is-os-x td-md-is-firefox wf-proximanova-n7-active wf-proximanova-i7-active wf-proximanova-n8-active wf-proximanova-i8-active wf-proximanova-n4-active wf-proximanova-i4-active wf-proximanova-n3-active wf-proximanova-i3-active wf-minionpro-n7-active wf-minionpro-i7-active wf-minionpro-i4-active wf-minionpro-n4-active wf-active" lang="en-US"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>How Quantum Computers Can Be Used to Build Better Quantum Computers</title>
+    <meta charset="UTF-8"><script src="How%20Quantum%20Computers%20Can%20Be%20Used%20to%20Build%20Better%20Quantum%20Computers_files/nr-1211.js"></script><script async="" src="How%20Quantum%20Computers%20Can%20Be%20Used%20to%20Build%20Better%20Quantum%20Computers_files/gtm.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam-cell.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"070dd4152b",applicationID:"166695418"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[u.now()].concat(f(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(8),f=t(9),c=t("ee").get("tracer"),u=t("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){s[e]=i(p+e,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){function r(){return f.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,f=t(10);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],4:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],5:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof m&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),g=!0,d("timing",["fi",e,n])}}function f(t){"hidden"===t&&d("pageHide",[p.now()])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,u,s,d=t("handle"),p=t("loader"),l=t(7),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,h=["click","keydown","mousedown","pointerdown","touchstart"];h.forEach(function(t){document.addEventListener(t,a,!1)})}l(f)}},{}],6:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],7:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],8:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],9:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],10:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var f=e(i),c=v(n),u=c.length,s=0;s<u;s++)c[s].apply(f,r);var p=d[w[n]];return p&&p.push([b,n,r,f]),f}}function o(t,e){y[t]=v(t).concat(e)}function m(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function v(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:e,buffer:h,abort:f,aborted:!1};return b}function o(t){return u(t,c,a)}function a(){return new r}function f(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",u=t("gos"),s=t(8),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!R++){var t=M.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();f("mark",["onload",n+M.offset],null,"api"),f("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){f("mark",["domContent",a()+M.offset],null,"api")}var a=t(3),f=t("handle"),c=t(8),u=t("ee"),s=t(6),d=t(4),p=t(2),l=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,g="addEventListener",h="attachEvent",y=m.XMLHttpRequest,w=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1211.min.js"},O=y&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(5),v[g]?(v[g]("DOMContentLoaded",o,!1),m[g]("load",r,!1)):(v[h]("onreadystatechange",i),m[h]("onload",r)),f("mark",["firstbyte",a.getLastTimestamp()],null,"api");var R=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,c],s],t)}f(n+"start",[o,a,c],s,u);try{return p=e.apply(a,o)}catch(m){throw f(n+"err",[o,a,m],s,u),m}finally{f(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var f,c,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)c=e[u],f=t[c],a(f)||(t[c]=n(f,s?c+r:r,i,c,o))}function f(n,r,o,a){if(!m||e){var f=m;m=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}m=f}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function f(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function c(t,e,n){var r=t[e];t[e]=f(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(9),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;e.exports=r,e.exports.wrapFunction=f,e.exports.wrapInPlace=c,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="pingback" href="https://singularityhub.com/xmlrpc.php">
+    <meta name="theme-color" content="#091b31">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PS7MVWW');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta name="robots" content="max-image-preview:large">
+<meta property="og:image" content="https://singularityhub.com/wp-content/uploads/2020/04/quantum-computer-3679893_1280.jpg"><link rel="icon" type="image/png" href="https://singularityhub.com/wp-content/uploads/2021/09/6138dcf7843f950e69f4c1b8_singularity-favicon02.png">
+<!-- This site is optimized with the Yoast SEO plugin v12.8 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="At the heart of the idea is the fact that the complexity of quantum systems grows exponentially as they increase in size.">
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://singularityhub.com/2021/10/04/how-quantum-computers-can-be-used-to-build-better-quantum-computers/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How Quantum Computers Can Be Used to Build Better Quantum Computers">
+<meta property="og:description" content="At the heart of the idea is the fact that the complexity of quantum systems grows exponentially as they increase in size.">
+<meta property="og:url" content="https://singularityhub.com/2021/10/04/how-quantum-computers-can-be-used-to-build-better-quantum-computers/">
+<meta property="og:site_name" content="Singularity Hub">
+<meta property="article:publisher" content="http://www.facebook.com/singularityhub">
+<meta property="article:tag" content="Computing">
+<meta property="article:section" content="Topics">
+<meta property="article:published_time" content="2021-10-04T14:00:33+00:00">
+<meta property="article:modified_time" content="2021-10-04T14:03:09+00:00">
+<meta property="og:updated_time" content="2021-10-04T14:03:09+00:00">
+<meta property="og:image" content="https://singularityhub.com/wp-content/uploads/2020/04/quantum-computer-3679893_1280.jpg">
+<meta property="og:image:secure_url" content="https://singularityhub.com/wp-content/uploads/2020/04/quantum-computer-3679893_1280.jpg">
+<meta property="og:image:width" content="1068">
+<meta property="og:image:height" content="601">
+<script type="application/ld+json" class="yoast-schema-graph yoast-schema-graph--main">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://singularityhub.com/#website","url":"https://singularityhub.com/","name":"Singularity Hub","description":"News and Insights on Technology, Science, and the Future from Singularity Group","potentialAction":{"@type":"SearchAction","target":"https://singularityhub.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://singularityhub.com/2021/10/04/how-quantum-computers-can-be-used-to-build-better-quantum-computers/#primaryimage","url":"https://singularityhub.com/wp-content/uploads/2020/04/quantum-computer-3679893_1280.jpg","width":1068,"height":601,"caption":"hot qubits quantum computer"},{"@type":"WebPage","@id":"https://singularityhub.com/2021/10/04/how-quantum-computers-can-be-used-to-build-better-quantum-computers/#webpage","url":"https://singularityhub.com/2021/10/04/how-quantum-computers-can-be-used-to-build-better-quantum-computers/","inLanguage":"en-US","name":"How Quantum Computers Can Be Used to Build Better Quantum Computers","isPartOf":{"@id":"https://singularityhub.com/#website"},"primaryImageOfPage":{"@id":"https://singularityhub.com/2021/10/04/how-quantum-computers-can-be-used-to-build-better-quantum-computers/#primaryimage"},"datePublished":"2021-10-04T14:00:33+00:00","dateModified":"2021-10-04T14:03:09+00:00","author":{"@id":"https://singularityhub.com/#/schema/person/07e2b90cbfa9bfc36da5eb639cff9e32"},"description":"At the heart of the idea is the fact that the complexity of quantum systems grows exponentially as they increase in size."},{"@type":["Person"],"@id":"https://singularityhub.com/#/schema/person/07e2b90cbfa9bfc36da5eb639cff9e32","name":"Edd Gent","image":{"@type":"ImageObject","@id":"https://singularityhub.com/#authorlogo","url":"https://secure.gravatar.com/avatar/774f8c8e89f1ee14ae67b3f8d911f865?s=96&d=mm&r=pg","caption":"Edd Gent"},"description":"I am a freelance science and technology writer based in Bangalore, India. My main areas of interest are engineering, computing and biology, with a particular focus on the intersections between the three.","sameAs":["https://www.linkedin.com/in/edd-gent-ab778372/","https://twitter.com/https://twitter.com/eddythegent"]}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel="dns-prefetch" href="https://s0.wp.com/">
+<link rel="dns-prefetch" href="https://singularityhub.com/">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="Singularity Hub » Feed" href="https://singularityhub.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Singularity Hub » Comments Feed" href="https://singularityhub.com/comments/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/singularityhub.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.1"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="How%20Quantum%20Computers%20Can%20Be%20Used%20to%20Build%20Better%20Quantum%20Computers_files/wp-emoji-release.js" type="text/javascript" defer="defer"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="How%20Quantum%20Computers%20Can%20Be%20Used%20to%20Build%20Better%20Quantum%20Computers_files/style_002.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-pagenavi-css" href="How%20Quantum%20Computers%20Can%20Be%20Used%20to%20Build%20Better%20Quantum%20Computers_files/pagenavi-css.css" type="text/css" media="all">
+<link crossorigin="anonymous" rel="stylesheet" id="google-fonts-style-css" href="How%20Quantum%20Computers%20Can%20Be%20Used%20to%20Build%20Better%20Quantum%20Computers_files/css.css" type="text/css" media="all">
+<link rel="stylesheet" id="marketo-css" href="How%20Quantum%20Computers%20Can%20Be%20Used%20to%20Build%20Better%20Quantum%20Computers_files/style-marketo.css" type="text/css" media="all">
+<link rel="stylesheet" id="js_composer_front-css" href="How%20Quantum%20Computers%20Can%20Be%20Used%20to%20Build%20Better%20Quantum%20Computers_files/js_composer.css" type="text/css" media="all">
+<link rel="stylesheet" id="td-theme-css" href="How%20Quantum%20Computers%20Can%20Be%20Used%20to%20Build%20Better%20Quantum%20Computers_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="td-theme-demo-style-css" href="How%20Quantum%20Computers%20Can%20Be%20Used%20to%20Build%20Better%20Quantum%20Computers_files/demo_style.css" type="text/css" media="all">
+<script type="text/javascript" src="How%20Quantum%20Computers%20Can%20Be%20Used%20to%20Build%20Better%20Quantum%20Computers_files/jquery.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="How%20Quantum%20Computers%20Can%20Be%20Used%20to%20Build%20Better%20Quantum%20Computers_files/jquery-migrate.js" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://singularityhub.com/wp-json/"><link rel="alternate" type="application/json" href="https://singularityhub.com/wp-json/wp/v2/posts/142605"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://singularityhub.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://singularityhub.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.8.1">
+<link rel="shortlink" href="https://wp.me/phyoN-B65">
+<link rel="alternate" type="application/json+oembed" href="https://singularityhub.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsingularityhub.com%2F2021%2F10%2F04%2Fhow-quantum-computers-can-be-used-to-build-better-quantum-computers%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://singularityhub.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsingularityhub.com%2F2021%2F10%2F04%2Fhow-quantum-computers-can-be-used-to-build-better-quantum-computers%2F&amp;format=xml">
+<!-- afb Instant Articles -->
+			<meta property="fb:pages" content="6352914058656086141">                    <script type="text/javascript">
+                        (function () {
+                            window.siqConfig = {
+                                engineKey: "1d44c4a5a40b7d5c2a22292487bee7c5"
+                            };
+                            window.siqConfig.baseUrl = "//pub.searchiq.co/";
+                            var script = document.createElement("SCRIPT");
+                            script.src = window.siqConfig.baseUrl + 'js/container/siq-container-2.js?cb=' + (Math.floor(Math.random()*999999)) + '&engineKey=' + siqConfig.engineKey;
+                            script.id = "siq-container";
+                            document.getElementsByTagName("HEAD")[0].appendChild(script);
+                        })();
+                    </script><script src="How%20Quantum%20Computers%20Can%20Be%20Used%20to%20Build%20Better%20Quantum%20Computers_files/siq-container-2.js" id="siq-container"></script><style type="text/css">img#wpstats{display:none}</style><!--[if lt IE 9]><script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress.">
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="https://singularityhub.com/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><link rel="amphtml" href="https://singularityhub.com/2021/10/04/how-quantum-computers-can-be-used-to-build-better-quantum-computers/amp/">
+<!-- JS generated by theme -->
+
+<script>
+    
+    
+
+	    var tdBlocksArray = []; //here we store all the items for the current page
+
+	    //td_block class - each ajax block uses a object of this class for requests
+	    function tdBlock() {
+		    this.id = '';
+		    this.block_type = 1; //block type id (1-234 etc)
+		    this.atts = '';
+		    this.td_column_number = '';
+		    this.td_current_page = 1; //
+		    this.post_count = 0; //from wp
+		    this.found_posts = 0; //from wp
+		    this.max_num_pages = 0; //from wp
+		    this.td_filter_value = ''; //current live filter value
+		    this.is_ajax_running = false;
+		    this.td_user_action = ''; // load more or infinite loader (used by the animation)
+		    this.header_color = '';
+		    this.ajax_pagination_infinite_stop = ''; //show load more at page x
+	    }
+
+
+        // td_js_generator - mini detector
+        (function(){
+            var htmlTag = document.getElementsByTagName("html")[0];
+
+            if ( navigator.userAgent.indexOf("MSIE 10.0") > -1 ) {
+                htmlTag.className += ' ie10';
+            }
+
+            if ( !!navigator.userAgent.match(/Trident.*rv\:11\./) ) {
+                htmlTag.className += ' ie11';
+            }
+
+            if ( /(iPad|iPhone|iPod)/g.test(navigator.userAgent) ) {
+                htmlTag.className += ' td-md-is-ios';
+            }
+
+            var user_agent = navigator.userAgent.toLowerCase();
+            if ( user_agent.indexOf("android") > -1 ) {
+                htmlTag.className += ' td-md-is-android';
+            }
+
+            if ( -1 !== navigator.userAgent.indexOf('Mac OS X')  ) {
+                htmlTag.className += ' td-md-is-os-x';
+            }
+
+            if ( /chrom(e|ium)/.test(navigator.userAgent.toLowerCase()) ) {
+               htmlTag.className += ' td-md-is-chrome';
+            }
+
+            if ( -1 !== navigator.userAgent.indexOf('Firefox') ) {
+                htmlTag.className += ' td-md-is-firefox';
+            }
+
+            if ( -1 !== navigator.userAgent.indexOf('Safari') && -1 === navigator.userAgent.indexOf('Chrome') ) {
+                htmlTag.className += ' td-md-is-safari';
+            }
+
+            if( -1 !== navigator.userAgent.indexOf('IEMobile') ){
+                htmlTag.className += ' td-md-is-iemobile';
+            }
+
+        })();
+
+
+
+
+        var tdLocalCache = {};
+
+        ( function () {
+            "use strict";
+
+            tdLocalCache = {
+                data: {},
+                remove: function (resource_id) {
+                    delete tdLocalCache.data[resource_id];
+                },
+                exist: function (resource_id) {
+                    return tdLocalCache.data.hasOwnProperty(resource_id) && tdLocalCache.data[resource_id] !== null;
+                },
+                get: function (resource_id) {
+                    return tdLocalCache.data[resource_id];
+                },
+                set: function (resource_id, cachedData) {
+                    tdLocalCache.remove(resource_id);
+                    tdLocalCache.data[resource_id] = cachedData;
+                }
+            };
+        })();
+
+    
+    
+var td_viewport_interval_list=[{"limitBottom":767,"sidebarWidth":228},{"limitBottom":1018,"sidebarWidth":300},{"limitBottom":1140,"sidebarWidth":324}];
+var tds_general_modal_image="yes";
+var td_ajax_url="https:\/\/singularityhub.com\/wp-admin\/admin-ajax.php?td_theme_name=Newspaper&v=8.1";
+var td_get_template_directory_uri="https:\/\/singularityhub.com\/wp-content\/themes\/Newspaper";
+var tds_snap_menu="";
+var tds_logo_on_sticky="";
+var tds_header_style="6";
+var td_please_wait="Please wait...";
+var td_email_user_pass_incorrect="User or password incorrect!";
+var td_email_user_incorrect="Email or username incorrect!";
+var td_email_incorrect="Email incorrect!";
+var tds_more_articles_on_post_enable="";
+var tds_more_articles_on_post_time_to_wait="";
+var tds_more_articles_on_post_pages_distance_from_top=0;
+var tds_theme_color_site_wide="#4db2ec";
+var tds_smart_sidebar="";
+var tdThemeName="Newspaper";
+var td_magnific_popup_translation_tPrev="Previous (Left arrow key)";
+var td_magnific_popup_translation_tNext="Next (Right arrow key)";
+var td_magnific_popup_translation_tCounter="%curr% of %total%";
+var td_magnific_popup_translation_ajax_tError="The content from %url% could not be loaded.";
+var td_magnific_popup_translation_image_tError="The image #%curr% could not be loaded.";
+var td_ad_background_click_link="";
+var td_ad_background_click_target="";
+</script>
+
+
+<!-- Header style compiled by theme -->
+
+<style>
+    
+.block-title > span,
+    .block-title > span > a,
+    .block-title > a,
+    .block-title > label,
+    .widgettitle,
+    .widgettitle:after,
+    .td-trending-now-title,
+    .td-trending-now-wrapper:hover .td-trending-now-title,
+    .wpb_tabs li.ui-tabs-active a,
+    .wpb_tabs li:hover a,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab.vc_active > a,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab:hover > a,
+    .td_block_template_1 .td-related-title .td-cur-simple-item,
+    .woocommerce .product .products h2:not(.woocommerce-loop-product__title),
+    .td-subcat-filter .td-subcat-dropdown:hover .td-subcat-more,
+    .td-weather-information:before,
+    .td-weather-week:before,
+    .td_block_exchange .td-exchange-header:before,
+    .td-theme-wrap .td_block_template_3 .td-block-title > *,
+    .td-theme-wrap .td_block_template_4 .td-block-title > *,
+    .td-theme-wrap .td_block_template_7 .td-block-title > *,
+    .td-theme-wrap .td_block_template_9 .td-block-title:after,
+    .td-theme-wrap .td_block_template_10 .td-block-title::before,
+    .td-theme-wrap .td_block_template_11 .td-block-title::before,
+    .td-theme-wrap .td_block_template_11 .td-block-title::after,
+    .td-theme-wrap .td_block_template_14 .td-block-title,
+    .td-theme-wrap .td_block_template_15 .td-block-title:before,
+    .td-theme-wrap .td_block_template_17 .td-block-title:before {
+        background-color: #303030;
+    }
+
+    .woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+    	background-color: #303030 !important;
+    }
+
+    .block-title,
+    .td_block_template_1 .td-related-title,
+    .wpb_tabs .wpb_tabs_nav,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container,
+    .woocommerce div.product .woocommerce-tabs ul.tabs:before,
+    .td-theme-wrap .td_block_template_5 .td-block-title > *,
+    .td-theme-wrap .td_block_template_17 .td-block-title,
+    .td-theme-wrap .td_block_template_17 .td-block-title::before {
+        border-color: #303030;
+    }
+
+    .td-theme-wrap .td_block_template_4 .td-block-title > *:before,
+    .td-theme-wrap .td_block_template_17 .td-block-title::after {
+        border-color: #303030 transparent transparent transparent;
+    }
+
+    
+    .td-theme-wrap .block-title > span,
+    .td-theme-wrap .block-title > span > a,
+    .td-theme-wrap .widget_rss .block-title .rsswidget,
+    .td-theme-wrap .block-title > a,
+    .widgettitle,
+    .widgettitle > a,
+    .td-trending-now-title,
+    .wpb_tabs li.ui-tabs-active a,
+    .wpb_tabs li:hover a,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab.vc_active > a,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab:hover > a,
+    .td-related-title .td-cur-simple-item,
+    .woocommerce div.product .woocommerce-tabs ul.tabs li.active,
+    .woocommerce .product .products h2:not(.woocommerce-loop-product__title),
+    .td-theme-wrap .td_block_template_2 .td-block-title > *,
+    .td-theme-wrap .td_block_template_3 .td-block-title > *,
+    .td-theme-wrap .td_block_template_4 .td-block-title > *,
+    .td-theme-wrap .td_block_template_5 .td-block-title > *,
+    .td-theme-wrap .td_block_template_6 .td-block-title > *,
+    .td-theme-wrap .td_block_template_6 .td-block-title:before,
+    .td-theme-wrap .td_block_template_7 .td-block-title > *,
+    .td-theme-wrap .td_block_template_8 .td-block-title > *,
+    .td-theme-wrap .td_block_template_9 .td-block-title > *,
+    .td-theme-wrap .td_block_template_10 .td-block-title > *,
+    .td-theme-wrap .td_block_template_11 .td-block-title > *,
+    .td-theme-wrap .td_block_template_12 .td-block-title > *,
+    .td-theme-wrap .td_block_template_13 .td-block-title > span,
+    .td-theme-wrap .td_block_template_13 .td-block-title > a,
+    .td-theme-wrap .td_block_template_14 .td-block-title > *,
+    .td-theme-wrap .td_block_template_14 .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-display-option,
+    .td-theme-wrap .td_block_template_14 .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-display-option i,
+    .td-theme-wrap .td_block_template_14 .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-display-option:hover,
+    .td-theme-wrap .td_block_template_14 .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-display-option:hover i,
+    .td-theme-wrap .td_block_template_15 .td-block-title > *,
+    .td-theme-wrap .td_block_template_15 .td-block-title-wrap .td-wrapper-pulldown-filter,
+    .td-theme-wrap .td_block_template_15 .td-block-title-wrap .td-wrapper-pulldown-filter i,
+    .td-theme-wrap .td_block_template_16 .td-block-title > *,
+    .td-theme-wrap .td_block_template_17 .td-block-title > * {
+    	color: #222222;
+    }
+
+
+    
+    .td-header-wrap .td-header-top-menu-full,
+    .td-header-wrap .top-header-menu .sub-menu {
+        background-color: #f9f9f9;
+    }
+    .td-header-style-8 .td-header-top-menu-full {
+        background-color: transparent;
+    }
+    .td-header-style-8 .td-header-top-menu-full .td-header-top-menu {
+        background-color: #f9f9f9;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .td-header-wrap .td-header-top-menu-full .td-header-top-menu,
+    .td-header-wrap .td-header-top-menu-full {
+        border-bottom: none;
+    }
+
+
+    
+    .td-header-top-menu,
+    .td-header-top-menu a,
+    .td-header-wrap .td-header-top-menu-full .td-header-top-menu,
+    .td-header-wrap .td-header-top-menu-full a,
+    .td-header-style-8 .td-header-top-menu,
+    .td-header-style-8 .td-header-top-menu a {
+        color: #2f2f2f;
+    }
+
+    
+    .top-header-menu .current-menu-item > a,
+    .top-header-menu .current-menu-ancestor > a,
+    .top-header-menu .current-category-ancestor > a,
+    .top-header-menu li a:hover {
+        color: #4db2ec;
+    }
+
+    
+    .td-header-wrap .td-header-sp-top-widget .td-icon-font {
+        color: #2f2f2f;
+    }
+
+    
+    .td-header-wrap .td-header-sp-top-widget i.td-icon-font:hover {
+        color: #4db2ec;
+    }
+
+
+    
+    .td-header-wrap .td-header-menu-wrap-full,
+    .sf-menu > .current-menu-ancestor > a,
+    .sf-menu > .current-category-ancestor > a,
+    .td-header-menu-wrap.td-affix,
+    .td-header-style-3 .td-header-main-menu,
+    .td-header-style-3 .td-affix .td-header-main-menu,
+    .td-header-style-4 .td-header-main-menu,
+    .td-header-style-4 .td-affix .td-header-main-menu,
+    .td-header-style-8 .td-header-menu-wrap.td-affix,
+    .td-header-style-8 .td-header-top-menu-full {
+		background-color: #081b30;
+    }
+
+
+    .td-boxed-layout .td-header-style-3 .td-header-menu-wrap,
+    .td-boxed-layout .td-header-style-4 .td-header-menu-wrap,
+    .td-header-style-3 .td_stretch_content .td-header-menu-wrap,
+    .td-header-style-4 .td_stretch_content .td-header-menu-wrap {
+    	background-color: #081b30 !important;
+    }
+
+
+    @media (min-width: 1019px) {
+        .td-header-style-1 .td-header-sp-recs,
+        .td-header-style-1 .td-header-sp-logo {
+            margin-bottom: 28px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1018px) {
+        .td-header-style-1 .td-header-sp-recs,
+        .td-header-style-1 .td-header-sp-logo {
+            margin-bottom: 14px;
+        }
+    }
+
+    .td-header-style-7 .td-header-top-menu {
+        border-bottom: none;
+    }
+
+
+    
+    .sf-menu > .current-menu-item > a:after,
+    .sf-menu > .current-menu-ancestor > a:after,
+    .sf-menu > .current-category-ancestor > a:after,
+    .sf-menu > li:hover > a:after,
+    .sf-menu > .sfHover > a:after,
+    .td_block_mega_menu .td-next-prev-wrap a:hover,
+    .td-mega-span .td-post-category:hover,
+    .td-header-wrap .black-menu .sf-menu > li > a:hover,
+    .td-header-wrap .black-menu .sf-menu > .current-menu-ancestor > a,
+    .td-header-wrap .black-menu .sf-menu > .sfHover > a,
+    .header-search-wrap .td-drop-down-search:after,
+    .header-search-wrap .td-drop-down-search .btn:hover,
+    .td-header-wrap .black-menu .sf-menu > .current-menu-item > a,
+    .td-header-wrap .black-menu .sf-menu > .current-menu-ancestor > a,
+    .td-header-wrap .black-menu .sf-menu > .current-category-ancestor > a {
+        background-color: #ed6629;
+    }
+
+
+    .td_block_mega_menu .td-next-prev-wrap a:hover {
+        border-color: #ed6629;
+    }
+
+    .header-search-wrap .td-drop-down-search:before {
+        border-color: transparent transparent #ed6629 transparent;
+    }
+
+    .td_mega_menu_sub_cats .cur-sub-cat,
+    .td_mod_mega_menu:hover .entry-title a,
+    .td-theme-wrap .sf-menu ul .td-menu-item > a:hover,
+    .td-theme-wrap .sf-menu ul .sfHover > a,
+    .td-theme-wrap .sf-menu ul .current-menu-ancestor > a,
+    .td-theme-wrap .sf-menu ul .current-category-ancestor > a,
+    .td-theme-wrap .sf-menu ul .current-menu-item > a {
+        color: #ed6629;
+    }
+
+
+    
+    .td-header-wrap .td-header-menu-wrap .sf-menu > li > a,
+    .td-header-wrap .header-search-wrap .td-icon-search {
+        color: #efefef;
+    }
+
+    
+    @media (max-width: 767px) {
+        body .td-header-wrap .td-header-main-menu {
+            background-color: #081b30 !important;
+        }
+    }
+
+
+    
+    .td-menu-background:before,
+    .td-search-background:before {
+        background: #081b30;
+        background: -moz-linear-gradient(top, #081b30 0%, #081b30 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, #081b30), color-stop(100%, #081b30));
+        background: -webkit-linear-gradient(top, #081b30 0%, #081b30 100%);
+        background: -o-linear-gradient(top, #081b30 0%, @mobileu_gradient_two_mob 100%);
+        background: -ms-linear-gradient(top, #081b30 0%, #081b30 100%);
+        background: linear-gradient(to bottom, #081b30 0%, #081b30 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#081b30', endColorstr='#081b30', GradientType=0 );
+    }
+
+    
+    .td-mobile-content .current-menu-item > a,
+    .td-mobile-content .current-menu-ancestor > a,
+    .td-mobile-content .current-category-ancestor > a,
+    #td-mobile-nav .td-menu-login-section a:hover,
+    #td-mobile-nav .td-register-section a:hover,
+    #td-mobile-nav .td-menu-socials-wrap a:hover i,
+    .td-search-close a:hover i {
+        color: #ed6629;
+    }
+
+    
+    .td-footer-wrapper,
+    .td-footer-wrapper .td_block_template_7 .td-block-title > *,
+    .td-footer-wrapper .td_block_template_17 .td-block-title,
+    .td-footer-wrapper .td-block-title-wrap .td-wrapper-pulldown-filter {
+        background-color: #081b30;
+    }
+
+    
+    .td-sub-footer-container {
+        background-color: #081b30;
+    }
+
+    
+    .td-footer-wrapper::before {
+        background-size: 100% auto;
+    }
+
+    
+    .td-footer-wrapper::before {
+        opacity: 0.6;
+    }
+
+
+
+    
+    .top-header-menu > li > a,
+    .td-weather-top-widget .td-weather-now .td-big-degrees,
+    .td-weather-top-widget .td-weather-header .td-weather-city,
+    .td-header-sp-top-menu .td_data_time {
+        font-family:proxima-nova, sans-serif;
+	font-weight:normal;
+	
+    }
+    
+    .top-header-menu .menu-item-has-children li a {
+    	font-family:proxima-nova, sans-serif;
+	
+    }
+    
+    ul.sf-menu > .td-menu-item > a {
+        font-family:proxima-nova, sans-serif;
+	font-size:16px;
+	font-weight:normal;
+	text-transform:none;
+	
+    }
+    
+    .sf-menu ul .td-menu-item a {
+        font-family:proxima-nova, sans-serif;
+	font-size:14px;
+	
+    }
+	
+    .td_mod_mega_menu .item-details a {
+        font-family:proxima-nova, sans-serif;
+	
+    }
+    
+    .td_mega_menu_sub_cats .block-mega-child-cats a {
+        font-family:proxima-nova, sans-serif;
+	
+    }
+    
+    .td-mobile-content .td-mobile-main-menu > li > a {
+        font-family:proxima-nova, sans-serif;
+	font-size:24px;
+	font-weight:bold;
+	
+    }
+    
+    .td-mobile-content .sub-menu a {
+        font-family:proxima-nova, sans-serif;
+	font-size:16px;
+	
+    }
+
+
+
+	
+    .block-title > span,
+    .block-title > a,
+    .widgettitle,
+    .td-trending-now-title,
+    .wpb_tabs li a,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab > a,
+    .td-theme-wrap .td-related-title a,
+    .woocommerce div.product .woocommerce-tabs ul.tabs li a,
+    .woocommerce .product .products h2:not(.woocommerce-loop-product__title),
+    .td-theme-wrap .td-block-title {
+        font-family:proxima-nova, sans-serif;
+	font-size:22px;
+	font-weight:bold;
+	text-transform:uppercase;
+	
+    }
+    
+    .td_module_wrap .td-post-author-name a {
+        font-family:proxima-nova, sans-serif;
+	font-size:14px;
+	
+    }
+    
+    .td-post-date .entry-date {
+        font-family:proxima-nova, sans-serif;
+	font-size:12px;
+	
+    }
+    
+    .td-module-comments a,
+    .td-post-views span,
+    .td-post-comments a {
+        font-family:proxima-nova, sans-serif;
+	font-size:16px;
+	
+    }
+    
+    .td-big-grid-meta .td-post-category,
+    .td_module_wrap .td-post-category,
+    .td-module-image .td-post-category {
+        font-family:proxima-nova, sans-serif;
+	font-weight:normal;
+	
+    }
+    
+    .td-subcat-filter .td-subcat-dropdown a,
+    .td-subcat-filter .td-subcat-list a,
+    .td-subcat-filter .td-subcat-dropdown span {
+        font-family:proxima-nova, sans-serif;
+	
+    }
+    
+    .td-excerpt {
+        font-family:proxima-nova, sans-serif;
+	font-size:18px;
+	
+    }
+
+
+	
+	.td_module_wrap .td-module-title {
+		font-family:proxima-nova, sans-serif;
+	
+	}
+     
+    .td_module_1 .td-module-title {
+    	font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+    
+    .td_module_2 .td-module-title {
+    	font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+    
+    .td_module_3 .td-module-title {
+    	font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+    
+    .td_module_4 .td-module-title {
+    	font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+    
+    .td_module_5 .td-module-title {
+    	font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+    
+    .td_module_6 .td-module-title {
+    	font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+    
+    .td_module_7 .td-module-title {
+    	font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+    
+    .td_module_8 .td-module-title {
+    	font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+    
+    .td_module_9 .td-module-title {
+    	font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+    
+    .td_module_10 .td-module-title {
+    	font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+    
+    .td_module_11 .td-module-title {
+    	font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+    
+    .td_module_12 .td-module-title {
+    	font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+    
+    .td_module_13 .td-module-title {
+    	font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+    
+    .td_module_14 .td-module-title {
+    	font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+    
+    .td_module_15 .entry-title {
+    	font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+    
+    .td_module_16 .td-module-title {
+    	font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+    
+    .td_module_17 .td-module-title {
+    	font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+    
+    .td_module_18 .td-module-title {
+    	font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+    
+    .td_module_19 .td-module-title {
+    	font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+
+
+
+
+	
+	.td_block_trending_now .entry-title a,
+	.td-theme-slider .td-module-title a,
+    .td-big-grid-post .entry-title {
+		font-family:proxima-nova, sans-serif;
+	
+	}
+    
+    .td_module_mx1 .td-module-title a {
+    	font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+    
+    .td_module_mx2 .td-module-title a {
+    	font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+    
+    .td_module_mx3 .td-module-title a {
+    	font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+    
+    .td_module_mx4 .td-module-title a {
+    	font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+    
+    .td_module_mx7 .td-module-title a {
+    	font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+    
+    .td_module_mx8 .td-module-title a {
+    	font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+    
+    .td_module_mx9 .td-module-title a {
+    	font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+    
+    .td_module_mx16 .td-module-title a {
+    	font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+    
+    .td_module_mx17 .td-module-title a {
+    	font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+    
+    .td_block_trending_now .entry-title a {
+    	font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+    
+    .td-theme-slider.iosSlider-col-1 .td-module-title a {
+        font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+    
+    .td-theme-slider.iosSlider-col-2 .td-module-title a {
+        font-family:proxima-nova, sans-serif;
+	font-size:22px;
+	font-weight:bold;
+	
+    }
+    
+    .td-theme-slider.iosSlider-col-3 .td-module-title a {
+        font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+    
+    .td-big-grid-post.td-big-thumb .td-big-grid-meta,
+    .td-big-thumb .td-big-grid-meta .entry-title {
+        font-family:proxima-nova, sans-serif;
+	font-size:44px;
+	line-height:48px;
+	font-weight:bold;
+	
+    }
+    
+    .td-big-grid-post.td-medium-thumb .td-big-grid-meta,
+    .td-medium-thumb .td-big-grid-meta .entry-title {
+        font-family:proxima-nova, sans-serif;
+	font-size:26px;
+	font-weight:bold;
+	
+    }
+    
+    .td-big-grid-post.td-small-thumb .td-big-grid-meta,
+    .td-small-thumb .td-big-grid-meta .entry-title {
+        font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+    
+    .td-big-grid-post.td-tiny-thumb .td-big-grid-meta,
+    .td-tiny-thumb .td-big-grid-meta .entry-title {
+        font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+    
+    .homepage-post .td-post-template-8 .td-post-header .entry-title {
+        font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+
+
+    
+	#td-mobile-nav,
+	#td-mobile-nav .wpb_button,
+	.td-search-wrap-mob {
+		font-family:proxima-nova, sans-serif;
+	
+	}
+
+
+	
+	.post .td-post-header .entry-title {
+		font-family:proxima-nova, sans-serif;
+	
+	}
+    
+    .td-post-template-default .td-post-header .entry-title {
+        font-family:proxima-nova, sans-serif;
+	font-size:60px;
+	font-weight:bold;
+	
+    }
+    
+    .td-post-template-1 .td-post-header .entry-title {
+        font-family:proxima-nova, sans-serif;
+	font-size:60px;
+	font-weight:bold;
+	
+    }
+    
+    .td-post-template-2 .td-post-header .entry-title {
+        font-family:proxima-nova, sans-serif;
+	font-size:60px;
+	font-weight:bold;
+	
+    }
+    
+    .td-post-template-3 .td-post-header .entry-title {
+        font-family:proxima-nova, sans-serif;
+	font-size:60px;
+	font-weight:bold;
+	
+    }
+    
+    .td-post-template-4 .td-post-header .entry-title {
+        font-family:proxima-nova, sans-serif;
+	font-size:60px;
+	font-weight:bold;
+	
+    }
+    
+    .td-post-template-5 .td-post-header .entry-title {
+        font-family:proxima-nova, sans-serif;
+	font-size:60px;
+	font-weight:bold;
+	
+    }
+    
+    .td-post-template-6 .td-post-header .entry-title {
+        font-family:proxima-nova, sans-serif;
+	font-size:60px;
+	font-weight:bold;
+	
+    }
+    
+    .td-post-template-7 .td-post-header .entry-title {
+        font-family:proxima-nova, sans-serif;
+	font-size:60px;
+	font-weight:bold;
+	
+    }
+    
+    .td-post-template-8 .td-post-header .entry-title {
+        font-family:proxima-nova, sans-serif;
+	font-size:60px;
+	font-weight:bold;
+	
+    }
+    
+    .td-post-template-9 .td-post-header .entry-title {
+        font-family:proxima-nova, sans-serif;
+	font-size:60px;
+	font-weight:bold;
+	
+    }
+    
+    .td-post-template-10 .td-post-header .entry-title {
+        font-family:proxima-nova, sans-serif;
+	font-size:60px;
+	font-weight:bold;
+	
+    }
+    
+    .td-post-template-11 .td-post-header .entry-title {
+        font-family:proxima-nova, sans-serif;
+	font-size:60px;
+	font-weight:bold;
+	
+    }
+    
+    .td-post-template-12 .td-post-header .entry-title {
+        font-family:proxima-nova, sans-serif;
+	font-size:60px;
+	font-weight:bold;
+	
+    }
+    
+    .td-post-template-13 .td-post-header .entry-title {
+        font-family:proxima-nova, sans-serif;
+	font-size:60px;
+	font-weight:bold;
+	
+    }
+
+
+
+
+
+	
+    .td-post-content p,
+    .td-post-content {
+        font-family:proxima-nova, sans-serif;
+	font-size:20px;
+	line-height:26px;
+	
+    }
+    
+    .post blockquote p,
+    .page blockquote p,
+    .td-post-text-content blockquote p {
+        font-family:Verdana, Geneva, sans-serif;
+	font-size:28px;
+	font-style:normal;
+	font-weight:bold;
+	text-transform:none;
+	
+    }
+    
+    .post .td_quote_box p,
+    .page .td_quote_box p {
+        font-family:proxima-nova, sans-serif;
+	font-size:32px;
+	line-height:38px;
+	font-style:italic;
+	
+    }
+    
+    .post .td_pull_quote p,
+    .page .td_pull_quote p {
+        font-family:proxima-nova, sans-serif;
+	font-size:24px;
+	font-weight:bold;
+	text-transform:none;
+	
+    }
+    
+    .td-post-content li {
+        font-family:proxima-nova, sans-serif;
+	font-size:20px;
+	line-height:29px;
+	
+    }
+    
+    .td-post-content h1 {
+        font-family:proxima-nova, sans-serif;
+	font-size:42px;
+	line-height:46px;
+	font-weight:bold;
+	
+    }
+    
+    .td-post-content h2 {
+        font-family:proxima-nova, sans-serif;
+	font-size:32px;
+	line-height:36px;
+	font-weight:bold;
+	
+    }
+    
+    .td-post-content h3 {
+        font-family:proxima-nova, sans-serif;
+	font-size:28px;
+	line-height:32px;
+	font-weight:bold;
+	
+    }
+    
+    .td-post-content h4 {
+        font-family:proxima-nova, sans-serif;
+	font-size:26px;
+	line-height:28px;
+	font-weight:normal;
+	
+    }
+    
+    .td-post-content h5 {
+        font-family:proxima-nova, sans-serif;
+	
+    }
+    
+    .td-post-content h6 {
+        font-family:proxima-nova, sans-serif;
+	
+    }
+
+
+
+
+
+    
+    .post .td-category a {
+        font-family:proxima-nova, sans-serif;
+	font-weight:normal;
+	
+    }
+    
+    .post header .td-post-author-name,
+    .post header .td-post-author-name a {
+        font-family:proxima-nova, sans-serif;
+	font-size:16px;
+	
+    }
+    
+    .post header .td-post-date .entry-date {
+        font-family:proxima-nova, sans-serif;
+	font-size:16px;
+	
+    }
+    
+    .post header .td-post-views span,
+    .post header .td-post-comments {
+        font-family:proxima-nova, sans-serif;
+	font-size:16px;
+	
+    }
+    
+    .post .td-post-source-tags a,
+    .post .td-post-source-tags span {
+        font-family:proxima-nova, sans-serif;
+	font-size:18px;
+	font-weight:normal;
+	
+    }
+    
+    .post .td-post-next-prev-content span {
+        font-family:proxima-nova, sans-serif;
+	
+    }
+    
+    .post .td-post-next-prev-content a {
+        font-family:proxima-nova, sans-serif;
+	
+    }
+    
+    .post .author-box-wrap .td-author-name a {
+        font-family:proxima-nova, sans-serif;
+	font-size:30px;
+	font-weight:bold;
+	
+    }
+    
+    .post .author-box-wrap .td-author-url a {
+        font-family:proxima-nova, sans-serif;
+	font-size:20px;
+	font-weight:bold;
+	
+    }
+    
+    .post .author-box-wrap .td-author-description {
+        font-family:proxima-nova, sans-serif;
+	font-size:20px;
+	
+    }
+    
+    .td_block_related_posts .entry-title a {
+        font-family:proxima-nova, sans-serif;
+	font-size:16px;
+	font-weight:normal;
+	
+    }
+    
+    .post .td-post-share-title {
+        font-family:proxima-nova, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	
+    }
+    
+	.wp-caption-text,
+	.wp-caption-dd {
+		font-family:proxima-nova, sans-serif;
+	font-size:14px;
+	font-style:normal;
+	font-weight:normal;
+	
+	}
+    
+    .td-post-template-default .td-post-sub-title,
+    .td-post-template-1 .td-post-sub-title,
+    .td-post-template-4 .td-post-sub-title,
+    .td-post-template-5 .td-post-sub-title,
+    .td-post-template-9 .td-post-sub-title,
+    .td-post-template-10 .td-post-sub-title,
+    .td-post-template-11 .td-post-sub-title {
+        font-family:proxima-nova, sans-serif;
+	font-size:32px;
+	line-height:38px;
+	font-style:italic;
+	font-weight:bold;
+	
+    }
+    
+    .td-post-template-2 .td-post-sub-title,
+    .td-post-template-3 .td-post-sub-title,
+    .td-post-template-6 .td-post-sub-title,
+    .td-post-template-7 .td-post-sub-title,
+    .td-post-template-8 .td-post-sub-title {
+        font-family:proxima-nova, sans-serif;
+	font-size:32px;
+	line-height:38px;
+	font-style:italic;
+	
+    }
+
+
+
+
+	
+    .td-page-title,
+    .woocommerce-page .page-title,
+    .td-category-title-holder .td-page-title {
+    	font-family:proxima-nova, sans-serif;
+	
+    }
+    
+    .td-page-content p,
+    .td-page-content li,
+    .td-page-content .td_block_text_with_title,
+    .woocommerce-page .page-description > p,
+    .wpb_text_column p {
+    	font-family:proxima-nova, sans-serif;
+	font-size:20px;
+	
+    }
+    
+    .td-page-content h1,
+    .wpb_text_column h1 {
+    	font-family:proxima-nova, sans-serif;
+	
+    }
+    
+    .td-page-content h2,
+    .wpb_text_column h2 {
+    	font-family:proxima-nova, sans-serif;
+	font-size:32px;
+	line-height:36px;
+	
+    }
+    
+    .td-page-content h3,
+    .wpb_text_column h3 {
+    	font-family:proxima-nova, sans-serif;
+	font-size:28px;
+	line-height:32px;
+	
+    }
+    
+    .td-page-content h4,
+    .wpb_text_column h4 {
+    	font-family:proxima-nova, sans-serif;
+	font-size:26px;
+	line-height:28px;
+	font-weight:normal;
+	
+    }
+    
+    .td-page-content h5,
+    .wpb_text_column h5 {
+    	font-family:proxima-nova, sans-serif;
+	
+    }
+    
+    .td-page-content h6,
+    .wpb_text_column h6 {
+    	font-family:proxima-nova, sans-serif;
+	
+    }
+
+
+
+
+    
+	.footer-text-wrap {
+		font-family:proxima-nova, sans-serif;
+	font-weight:normal;
+	
+	}
+	
+	.td-sub-footer-copy {
+		font-family:proxima-nova, sans-serif;
+	font-weight:normal;
+	
+	}
+	
+	.td-sub-footer-menu ul li a {
+		font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+	}
+
+
+
+
+	
+    .entry-crumbs a,
+    .entry-crumbs span,
+    #bbpress-forums .bbp-breadcrumb a,
+    #bbpress-forums .bbp-breadcrumb .bbp-breadcrumb-current {
+    	font-family:proxima-nova, sans-serif;
+	font-style:normal;
+	font-weight:normal;
+	
+    }
+    
+    .category .td-category a {
+    	font-family:proxima-nova, sans-serif;
+	
+    }
+    
+    .td-trending-now-display-area .entry-title {
+    	font-family:proxima-nova, sans-serif;
+	
+    }
+    
+    .page-nav a,
+    .page-nav span {
+    	font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+    }
+    
+    #td-outer-wrap span.dropcap {
+    	font-family:proxima-nova, sans-serif;
+	font-size:40px;
+	font-style:normal;
+	font-weight:bold;
+	
+    }
+    
+    .widget_archive a,
+    .widget_calendar,
+    .widget_categories a,
+    .widget_nav_menu a,
+    .widget_meta a,
+    .widget_pages a,
+    .widget_recent_comments a,
+    .widget_recent_entries a,
+    .widget_text .textwidget,
+    .widget_tag_cloud a,
+    .widget_search input,
+    .woocommerce .product-categories a,
+    .widget_display_forums a,
+    .widget_display_replies a,
+    .widget_display_topics a,
+    .widget_display_views a,
+    .widget_display_stats {
+    	font-family:proxima-nova, sans-serif;
+	
+    }
+    
+	input[type="submit"],
+	.td-read-more a,
+	.vc_btn,
+	.woocommerce a.button,
+	.woocommerce button.button,
+	.woocommerce #respond input#submit {
+		font-family:proxima-nova, sans-serif;
+	font-weight:bold;
+	
+	}
+	
+	.white-popup-block,
+	.white-popup-block .wpb_button {
+		font-family:proxima-nova, sans-serif;
+	
+	}
+
+
+
+	
+    body, p {
+    	font-family:proxima-nova, sans-serif;
+	font-size:20px;
+	
+    }
+</style>
+
+<link rel="icon" href="https://singularityhub.com/wp-content/uploads/2021/09/6138dcf7843f950e69f4c1b8_singularity-favicon02.png" sizes="32x32">
+<link rel="icon" href="https://singularityhub.com/wp-content/uploads/2021/09/6138dcf7843f950e69f4c1b8_singularity-favicon02.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://singularityhub.com/wp-content/uploads/2021/09/6138dcf7843f950e69f4c1b8_singularity-favicon02.png">
+<meta name="msapplication-TileImage" content="https://singularityhub.com/wp-content/uploads/2021/09/6138dcf7843f950e69f4c1b8_singularity-favicon02.png">
+			<style type="text/css" id="wp-custom-css">
+				/*
+You can add your own CSS here.
+
+Click the help icon above to learn more.
+*/
+.speechkit-container { margin: 30px 0 !important; }
+
+.img{
+		max-width:100%;
+		max-height:100%;
+		height: inherit !important;
+}			</style>
+		<noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>
+    <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+    <script>
+    ( function( $ ) {
+        /* add smooth scrolling on anchor links ------------------------*/
+        function scrollLink() {
+          var nav = $('#on--page--nav');
+          $('a.smooth--link, li.smooth--link > a').click(function() {
+            if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length && nav.hasClass('sticky')) {
+                $('html, body').animate({
+                  scrollTop: target.offset().top - 150
+                }, 700);
+                return false;
+              }
+              else if (target.length) {
+                $('html, body').animate({
+                  scrollTop: target.offset().top - 150
+                }, 700);
+                return false;
+              }
+            }
+          });
+        }
+
+        /* change height of magin on content-wrap dynamically --------------*/
+        function dynamicMargin() {
+            if ($(window).width() > 767) {
+                //using the height of the logo container because menu height can be unreliable before font loads
+                var header = $(".td-main-menu-logo");
+                var margin = $(".td-main-content-wrap");
+                margin.css("margin-top", header.outerHeight());
+            }
+        }
+
+        $( document ).ready( scrollLink ); // .ready( dynamicMargin )
+    })( jQuery );
+    </script>
+<script id="omapi-script" src="How%20Quantum%20Computers%20Can%20Be%20Used%20to%20Build%20Better%20Quantum%20Computers_files/api.js"></script><style type="text/css">.tk-proxima-nova{font-family:"proxima-nova",sans-serif;}.tk-minion-pro{font-family:"minion-pro",serif;}</style><style type="text/css">@font-face{font-family:tk-proxima-nova-n7;src:url(https://use.typekit.net/af/f80f1d/00000000000000003b9aefb8/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/f80f1d/00000000000000003b9aefb8/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/f80f1d/00000000000000003b9aefb8/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-display:auto;}@font-face{font-family:tk-proxima-nova-i7;src:url(https://use.typekit.net/af/29352b/00000000000000003b9aefb9/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/29352b/00000000000000003b9aefb9/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/29352b/00000000000000003b9aefb9/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;font-display:auto;}@font-face{font-family:tk-proxima-nova-n8;src:url(https://use.typekit.net/af/be199d/00000000000000003b9aefba/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3) format("woff2"),url(https://use.typekit.net/af/be199d/00000000000000003b9aefba/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3) format("woff"),url(https://use.typekit.net/af/be199d/00000000000000003b9aefba/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3) format("opentype");font-weight:800;font-style:normal;font-display:auto;}@font-face{font-family:tk-proxima-nova-i8;src:url(https://use.typekit.net/af/26b8f9/00000000000000003b9aefbb/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3) format("woff2"),url(https://use.typekit.net/af/26b8f9/00000000000000003b9aefbb/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3) format("woff"),url(https://use.typekit.net/af/26b8f9/00000000000000003b9aefbb/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3) format("opentype");font-weight:800;font-style:italic;font-display:auto;}@font-face{font-family:tk-proxima-nova-n4;src:url(https://use.typekit.net/af/af96c8/00000000000000003b9aefc0/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/af96c8/00000000000000003b9aefc0/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/af96c8/00000000000000003b9aefc0/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-display:auto;}@font-face{font-family:tk-proxima-nova-i4;src:url(https://use.typekit.net/af/20aa1e/00000000000000003b9aefc1/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/20aa1e/00000000000000003b9aefc1/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/20aa1e/00000000000000003b9aefc1/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-display:auto;}@font-face{font-family:tk-proxima-nova-n3;src:url(https://use.typekit.net/af/7f382d/00000000000000003b9aefbc/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/7f382d/00000000000000003b9aefbc/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/7f382d/00000000000000003b9aefbc/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-display:auto;}@font-face{font-family:tk-proxima-nova-i3;src:url(https://use.typekit.net/af/0fcc66/00000000000000003b9aefbd/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("woff2"),url(https://use.typekit.net/af/0fcc66/00000000000000003b9aefbd/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("woff"),url(https://use.typekit.net/af/0fcc66/00000000000000003b9aefbd/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("opentype");font-weight:300;font-style:italic;font-display:auto;}@font-face{font-family:tk-minion-pro-n7;src:url(https://use.typekit.net/af/ea8d85/0000000000000000000151d1/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/ea8d85/0000000000000000000151d1/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/ea8d85/0000000000000000000151d1/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-display:auto;}@font-face{font-family:tk-minion-pro-i7;src:url(https://use.typekit.net/af/bc1d75/0000000000000000000151d2/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/bc1d75/0000000000000000000151d2/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/bc1d75/0000000000000000000151d2/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;font-display:auto;}@font-face{font-family:tk-minion-pro-i4;src:url(https://use.typekit.net/af/5033af/0000000000000000000151d3/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/5033af/0000000000000000000151d3/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/5033af/0000000000000000000151d3/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-display:auto;}@font-face{font-family:tk-minion-pro-n4;src:url(https://use.typekit.net/af/1286c7/0000000000000000000151d6/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/1286c7/0000000000000000000151d6/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/1286c7/0000000000000000000151d6/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-display:auto;}</style><style type="text/css">@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/f80f1d/00000000000000003b9aefb8/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/f80f1d/00000000000000003b9aefb8/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/f80f1d/00000000000000003b9aefb8/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/29352b/00000000000000003b9aefb9/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/29352b/00000000000000003b9aefb9/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/29352b/00000000000000003b9aefb9/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/be199d/00000000000000003b9aefba/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3) format("woff2"),url(https://use.typekit.net/af/be199d/00000000000000003b9aefba/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3) format("woff"),url(https://use.typekit.net/af/be199d/00000000000000003b9aefba/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3) format("opentype");font-weight:800;font-style:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/26b8f9/00000000000000003b9aefbb/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3) format("woff2"),url(https://use.typekit.net/af/26b8f9/00000000000000003b9aefbb/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3) format("woff"),url(https://use.typekit.net/af/26b8f9/00000000000000003b9aefbb/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i8&v=3) format("opentype");font-weight:800;font-style:italic;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/af96c8/00000000000000003b9aefc0/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/af96c8/00000000000000003b9aefc0/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/af96c8/00000000000000003b9aefc0/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/20aa1e/00000000000000003b9aefc1/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/20aa1e/00000000000000003b9aefc1/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/20aa1e/00000000000000003b9aefc1/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/7f382d/00000000000000003b9aefbc/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/7f382d/00000000000000003b9aefbc/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/7f382d/00000000000000003b9aefbc/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/0fcc66/00000000000000003b9aefbd/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("woff2"),url(https://use.typekit.net/af/0fcc66/00000000000000003b9aefbd/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("woff"),url(https://use.typekit.net/af/0fcc66/00000000000000003b9aefbd/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3) format("opentype");font-weight:300;font-style:italic;font-display:auto;}@font-face{font-family:minion-pro;src:url(https://use.typekit.net/af/ea8d85/0000000000000000000151d1/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/ea8d85/0000000000000000000151d1/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/ea8d85/0000000000000000000151d1/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-display:auto;}@font-face{font-family:minion-pro;src:url(https://use.typekit.net/af/bc1d75/0000000000000000000151d2/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/bc1d75/0000000000000000000151d2/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/bc1d75/0000000000000000000151d2/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;font-display:auto;}@font-face{font-family:minion-pro;src:url(https://use.typekit.net/af/5033af/0000000000000000000151d3/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/5033af/0000000000000000000151d3/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/5033af/0000000000000000000151d3/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-display:auto;}@font-face{font-family:minion-pro;src:url(https://use.typekit.net/af/1286c7/0000000000000000000151d6/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/1286c7/0000000000000000000151d6/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/1286c7/0000000000000000000151d6/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-display:auto;}</style><script src="How%20Quantum%20Computers%20Can%20Be%20Used%20to%20Build%20Better%20Quantum%20Computers_files/settings.js"></script><script src="How%20Quantum%20Computers%20Can%20Be%20Used%20to%20Build%20Better%20Quantum%20Computers_files/sa.js"></script><script type="text/javascript">!function(s){var o,a,n,r;void 0!==s&&(o=location.href.replace(/^https?:\/\/([^\/]+).*$/i,"$1").toLowerCase(),a=location.href,n=function(e,i,n){var r,t,s;i&&((r=new Image).onerror=r.onload=n,t=null!=i.kw?i.kw.replace(/\"/g,""):i.kw,s='{"sid":"'+i.sid+'","said":"'+i.said.replace("www.","")+'","kw":"'+t+'","source_url":"'+a+'","engineKey":"'+i.engineKey+'"'+(i.refURL?',"external_referrer":"'+i.refURL+'"':"")+"}",r.src="//track.searchiq.co/api/tr?event="+encodeURIComponent("search")+"&eventInfo="+encodeURIComponent(s))},r=function(){var e=s(".holdResults");if(0!==e.length){for(var i=e.attr("class").split(" "),n=-1,r=0;r<i.length;r++){var t=i[r].trim();/^siq_searchIndexResult-\d+$/.test(t)&&(n=t.replace(/^siq_searchIndexResult-(\d+)$/,"$1"))}if(!(n<0))return{kw:s(".siq_searchIndex-"+n).val(),sid:SiqConfig.siqSid,said:o,engineKey:siqConfig.engineKey}}},function(){if(s(document).on("click",".holdResults .searchWrapperLabel, .holdResults ul li .resultsMore",function(){n(0,r())}),s(document).on("click",".siq-autocomplete a",function(){s(this).hasClass("siq-recommended-link")||0!==s(this).parents(".siq-recommended-link").length||n(0,r())}),s(document).on("submit","form.siq_searchForm",function(){n(0,r())}),s(document).on("keydown",function(e){switch((e=e||window.event).which||e.keyCode){case 13:(0<s(".holdResults").length&&0<s(".holdResults .siq-autocomplete.highlighted").length||s(e.target).is("#siq_ajax_search")||s(e.target).parents("form").is("#siq_search_results div.siq_search_ajax.siq_search_box form"))&&n(0,r())}}),s(document).on("click touch",".siq_aclinewrap",function(){n(0,{kw:s(this).parents("#siq_mobile").find(".siq_searchwrap input.siq_searchfield").val(),sid:SiqConfig.siqSid,said:o,engineKey:siqConfig.engineKey})}),document.referrer&&document.referrer.replace(/^https?:\/\/([^\/]+).*$/i,"$1").toLowerCase()!==o){if(SiqConfig.resultPageUrl.replace(/^https?:/,"").replace(/\?.*$/,"")!==location.href.replace(/^https?:/,"").replace(/\?.*$/,""))return;function e(e,i){if(!(e.indexOf("?")<0)){var n=e.substr(e.indexOf("?")+1);if(0!==n.length)for(var r=n.split("&"),t=0;t<r.length;t++){var s=r[t];if(s.indexOf("=")<0&&decodeURIComponent(s)===i)return!0;if(i===decodeURIComponent(s.substr(0,s.indexOf("="))))return decodeURIComponent(s.substr(s.indexOf("=")+1))}}}var i=e(location.href,SiqConfig.queryParameter)||e(location.href,SiqConfig.searchBoxName);eventData={kw:i,sid:SiqConfig.siqSid,said:o,engineKey:siqConfig.engineKey,refURL:document.referrer},n(0,eventData)}}())}(window.siq_S);</script><script type="text/javascript">!function(){
+ var img=new Image();
+ img.src="//api.searchiq.co/live?engineKey="+window.siqConfig.engineKey;
+}();</script></head>
+
+<body class="post-template-default single single-post postid-142605 single-format-standard how-quantum-computers-can-be-used-to-build-better-quantum-computers global-block-template-1 td-magazine single_template_3 wpb-js-composer js-comp-ver-5.5.4 vc_responsive td-full-layout td-js-loaded" itemscope="itemscope" itemtype="https://schema.org/WebPage">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PS7MVWW"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+        <div class="td-scroll-up"><i class="td-icon-menu-up"></i></div>
+
+    <div class="td-menu-background"></div>
+<div id="td-mobile-nav" style="min-height: 1176px;">
+    <div class="td-mobile-container">
+
+        <!-- login section -->
+        
+        <!-- menu section -->
+        <div class="td-mobile-content">
+            <div class="menu-header-menu-mobile-container"><ul id="menu-header-menu-mobile" class="td-mobile-main-menu"><li id="menu-item-112439" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-first menu-item-112439 td_mobile_elem_with_submenu_0"><a href="https://singularityhub.com/topics/" class="td-link-element-after">Topics<i class="td-icon-menu-right td-element-after"></i></a>
+<ul class="sub-menu">
+	<li id="menu-item-112442" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-112442"><a href="https://singularityhub.com/topics/#ai">AI</a></li>
+	<li id="menu-item-112443" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-112443"><a href="https://singularityhub.com/topics/#robotics">Robotics</a></li>
+	<li id="menu-item-112445" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-112445"><a href="https://singularityhub.com/topics/#neuroscience">Neuroscience</a></li>
+	<li id="menu-item-112446" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-112446"><a href="https://singularityhub.com/topics/#computing">Computing</a></li>
+	<li id="menu-item-112447" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-112447"><a href="https://singularityhub.com/topics/#genetics">Genetics</a></li>
+	<li id="menu-item-112448" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-112448"><a href="https://singularityhub.com/topics/#biotech">Biotech</a></li>
+	<li id="menu-item-112476" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-112476"><a href="https://singularityhub.com/more-topics/">More Topics</a></li>
+</ul>
+</li>
+<li id="menu-item-112440" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-112440 td_mobile_elem_with_submenu_1"><a href="https://singularityhub.com/experts/" class="td-link-element-after">Experts<i class="td-icon-menu-right td-element-after"></i></a>
+<ul class="sub-menu">
+	<li id="menu-item-112454" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-112454"><a href="https://singularityhub.com/experts/#featured">Featured Experts</a></li>
+	<li id="menu-item-112456" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-112456"><a href="https://singularityhub.com/experts/#perspectives">Perspectives</a></li>
+	<li id="menu-item-112455" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-112455"><a href="https://singularityhub.com/experts/#interviews">Interviews</a></li>
+	<li id="menu-item-112457" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-112457"><a href="https://singularityhub.com/experts/#books">Books</a></li>
+</ul>
+</li>
+<li id="menu-item-112459" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-112459"><a href="https://su.org/events/">Events</a></li>
+<li id="menu-item-112436" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-112436 td_mobile_elem_with_submenu_2"><a href="https://singularityhub.com/videos/" class="td-link-element-after">Videos<i class="td-icon-menu-right td-element-after"></i></a>
+<ul class="sub-menu">
+	<li id="menu-item-112465" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-112465"><a href="https://singularityhub.com/videos/#latest">Latest</a></li>
+	<li id="menu-item-112466" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-112466"><a href="https://singularityhub.com/videos/#series">Series</a></li>
+	<li id="menu-item-112467" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-112467"><a href="https://singularityhub.com/videos/#talks">Talks</a></li>
+</ul>
+</li>
+<li id="menu-item-95851" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95851"><a href="https://singularityhub.com/about/">About</a></li>
+<li id="menu-item-113279" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-113279 td_mobile_elem_with_submenu_3"><a href="https://su.org/" class="td-link-element-after">Singularity<i class="td-icon-menu-right td-element-after"></i></a>
+<ul class="sub-menu">
+	<li id="menu-item-113280" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-113280"><a href="https://su.org/about/">About</a></li>
+	<li id="menu-item-113283" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-113283"><a href="https://su.org/experience/">Programs</a></li>
+	<li id="menu-item-142328" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-142328"><a href="https://su.org/membership">Membership</a></li>
+	<li id="menu-item-113282" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-113282"><a href="https://su.org/experts">Experts</a></li>
+	<li id="menu-item-113284" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-113284"><a href="https://su.org/community">Community</a></li>
+	<li id="menu-item-113281" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-113281"><a href="https://su.org/careers/">Careers</a></li>
+</ul>
+</li>
+<li id="menu-item-95854" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95854"><a href="https://singularityhub.com/newsletter/">Subscribe</a></li>
+</ul></div>        </div>
+
+        <!-- mobile menu top section -->
+        <div class="td-menu-socials-wrap">
+            <!-- socials -->
+            <div class="td-menu-socials">
+                
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="https://www.facebook.com/singularityhub" title="Facebook">
+                <i class="td-icon-font td-icon-facebook"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="https://plus.google.com/+singularityhub" title="Google+">
+                <i class="td-icon-font td-icon-googleplus"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="https://www.instagram.com/singularityhub/" title="Instagram">
+                <i class="td-icon-font td-icon-instagram"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="https://singularityhub.com/feed/" title="RSS">
+                <i class="td-icon-font td-icon-rss"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="https://twitter.com/singularityhub" title="Twitter">
+                <i class="td-icon-font td-icon-twitter"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="https://www.youtube.com/user/singularityu?sub_confirmation=1" title="Youtube">
+                <i class="td-icon-font td-icon-youtube"></i>
+            </a>
+        </span>            </div>
+            <!-- close button -->
+            <div class="td-mobile-close">
+                <a href="#"><i class="td-icon-close-mobile"></i></a>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- register/login section -->
+    </div>    <div class="td-search-background"></div>
+<div class="td-search-wrap-mob">
+	<div class="td-drop-down-search" aria-labelledby="td-header-search-button">
+		<form method="get" class="td-search-form" action="https://singularityhub.com/">
+			<!-- close button -->
+			<div class="td-search-close">
+				<a href="#"><i class="td-icon-close-mobile"></i></a>
+			</div>
+			<div role="search" class="td-search-input">
+				<span>Search</span>
+				<input id="td-header-search-mob" type="text" name="s" autocomplete="off">
+			</div>
+		</form>
+		<div id="td-aj-search-mob"></div>
+	</div>
+</div>
+
+    <div id="td-outer-wrap">
+    
+        <!--
+Header style 6
+-->
+
+<div class="td-header-wrap td-header-style-6">
+
+    <div class="td-header-top-menu-full">
+        <div class="td-container td-header-row td-header-top-menu">
+            <!-- LOGIN MODAL -->
+
+                <div id="login-form" class="white-popup-block mfp-hide mfp-with-anim">
+                    <div class="td-login-wrap">
+                        <a href="#" class="td-back-button"><i class="td-icon-modal-back"></i></a>
+                        <div id="td-login-div" class="td-login-form-div td-display-block">
+                            <div class="td-login-panel-title">Sign in</div>
+                            <div class="td-login-panel-descr">Welcome! Log into your account</div>
+                            <div class="td_display_err"></div>
+                            <div class="td-login-inputs"><input class="td-login-input" type="text" name="login_email" id="login_email" required=""><label>your username</label></div>
+	                        <div class="td-login-inputs"><input class="td-login-input" type="password" name="login_pass" id="login_pass" value="" required=""><label>your password</label></div>
+                            <input type="button" name="login_button" id="login_button" class="wpb_button btn td-login-button" value="Login">
+                            <div class="td-login-info-text"><a href="#" id="forgot-pass-link">Forgot your password? Get help</a></div>
+                            
+                        </div>
+
+                        
+
+                         <div id="td-forgot-pass-div" class="td-login-form-div td-display-none">
+                            <div class="td-login-panel-title">Password recovery</div>
+                            <div class="td-login-panel-descr">Recover your password</div>
+                            <div class="td_display_err"></div>
+                            <div class="td-login-inputs"><input class="td-login-input" type="text" name="forgot_email" id="forgot_email" required=""><label>your email</label></div>
+                            <input type="button" name="forgot_button" id="forgot_button" class="wpb_button btn td-login-button" value="Send My Password">
+                            <div class="td-login-info-text">A password will be e-mailed to you.</div>
+                        </div>
+                    </div>
+                </div>
+                        </div>
+    </div>
+
+    <div class="td-header-menu-wrap-full">
+        <div class="td-header-menu-wrap">
+            <div class="td-container td-header-row td-header-main-menu black-menu">
+                <div id="td-header-menu" role="navigation">
+	<div id="td-top-mobile-toggle"><a href="#"><i class="td-icon-font td-icon-mobile"></i></a></div>
+	<div class="td-main-menu-logo td-logo-in-menu">
+		            <a class="td-main-logo" href="https://singularityhub.com/">
+                <img src="data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3C!-- Creator: CorelDRAW X6 --%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='4.08333in' height='0.84722in' version='1.1' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd'%0AviewBox='0 0 4083 847' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3Cstyle type='text/css'%3E%3C!%5BCDATA%5B .fil0 %7Bfill:%23ffffff;fill-rule:nonzero%7D %5D%5D%3E%3C/style%3E%3C/defs%3E%3Cg id='Layer_x0020_1'%3E%3Cmetadata id='CorelCorpID_0Corel-Layer'/%3E%3Cpath class='fil0' d='M370 276c-13,-22 -51,-44 -93,-44 -55,0 -81,23 -81,52 0,34 40,44 88,49 82,10 158,31 158,125 0,88 -78,125 -165,125 -80,0 -142,-25 -171,-97l62 -32c17,43 63,62 111,62 47,0 90,-16 90,-59 0,-37 -39,-52 -91,-58 -80,-10 -154,-31 -154,-119 0,-81 80,-114 152,-115 61,0 125,17 154,78l-59 30z'/%3E%3Cpath class='fil0' d='M482 297l0 278 69 0 0 -278 -69 0zm75 -77c0,53 -81,53 -81,0 0,-53 81,-53 81,0z'/%3E%3Cpath class='fil0' d='M816 575l0 -145c0,-42 -23,-74 -67,-74 -42,0 -71,35 -71,78l0 142 -68 0 0 -277 61 0 4 38c28,-28 56,-42 91,-42 65,0 117,49 117,136l0 145 -69 0z'/%3E%3Cpath class='fil0' d='M987 429c0,48 33,77 72,77 39,0 72,-29 72,-77 0,-48 -33,-78 -72,-78 -40,0 -72,30 -72,78zm163 -160l51 38 -31 39c21,24 29,52 29,82 0,34 -13,83 -58,103 46,23 57,56 57,92 0,76 -58,124 -139,124 -80,0 -140,-49 -140,-124l68 0c0,36 33,60 72,60 39,0 70,-21 70,-60 0,-38 -36,-56 -70,-56 -86,0 -140,-53 -140,-139 0,-87 63,-140 140,-140 22,0 44,3 63,16l28 -35z'/%3E%3Cpath class='fil0' d='M1313 298l0 145c0,42 23,74 67,74 42,0 71,-35 71,-78l0 -142 68 0 0 277 -61 0 -5 -38c-29,28 -55,42 -94,42 -66,0 -115,-50 -115,-136l0 -145 69 0z'/%3E%3Cpolygon class='fil0' points='1579,575 1647,575 1647,182 1579,182 '/%3E%3Cpath class='fil0' d='M1761 436c0,53 37,84 82,84 108,0 108,-168 0,-168 -45,0 -82,31 -82,84zm166 -138l66 0 0 277 -65 0 -3 -40c-16,33 -59,48 -90,49 -82,1 -143,-50 -143,-147 0,-95 63,-145 144,-145 37,0 72,17 88,45l2 -38z'/%3E%3Cpath class='fil0' d='M2114 298l5 32c21,-34 50,-39 78,-39 29,0 56,11 71,26l-31 60c-14,-12 -27,-18 -49,-18 -36,0 -69,19 -69,70l0 146 -69 0 0 -277 63 0z'/%3E%3Cpath class='fil0' d='M2305 297l0 278 69 0 0 -278 -69 0zm75 -77c0,53 -81,53 -81,0 0,-53 81,-53 81,0z'/%3E%3Cpath class='fil0' d='M2543 220l0 79 76 0 0 59 -77 0 0 120c0,26 15,39 36,39 11,0 23,-3 33,-8l19 58c-20,8 -36,11 -57,12 -60,2 -99,-32 -99,-101l0 -120 -52 0 0 -59 52 0 0 -71 69 -7z'/%3E%3Cpolygon class='fil0' points='2956,298 2787,690 2712,690 2764,570 2653,298 2733,298 2775,417 2801,495 2830,419 2880,298 '/%3E%3Cpolygon class='fil0' points='3265,575 3265,416 3072,416 3072,575 2998,575 2998,182 3072,182 3072,348 3265,348 3265,182 3339,182 3339,575 '/%3E%3Cpath class='fil0' d='M3451 298l0 145c0,42 23,74 67,74 42,0 71,-35 71,-78l0 -142 68 0 0 277 -61 0 -4 -38c-29,28 -55,42 -94,42 -66,0 -115,-50 -115,-136l0 -145 69 0z'/%3E%3Cpath class='fil0' d='M3779 436c0,50 37,81 80,81 44,0 79,-33 79,-81 0,-50 -35,-81 -79,-81 -43,0 -80,33 -80,81zm-4 -254l0 153c16,-29 62,-44 91,-44 81,0 141,49 141,145 0,91 -61,145 -143,145 -34,0 -68,-11 -89,-44l-4 38 -64 0 0 -393 69 0z'/%3E%3C/g%3E%3C/svg%3E%0A" alt="Singularity Hub">
+                <span class="td-visual-hidden">Singularity Hub</span>
+            </a>
+        	</div>
+	<div class="menu-header-container"><ul id="menu-header" class="sf-menu sf-js-enabled"><li id="menu-item-112356" class="nav-topics menu-item menu-item-type-post_type menu-item-object-page menu-item-first menu-item-112356"><a href="https://singularityhub.com/topics/">Topics</a></li>
+<li id="menu-item-112357" class="nav-experts menu-item menu-item-type-post_type menu-item-object-page menu-item-112357"><a href="https://singularityhub.com/experts/">Experts</a></li>
+<li id="menu-item-131265" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-131265"><a href="https://su.org/events/">Events</a></li>
+<li id="menu-item-112353" class="pink-link nav-videos menu-item menu-item-type-post_type menu-item-object-page menu-item-112353"><a href="https://singularityhub.com/videos/">Videos</a></li>
+</ul></div></div>
+
+
+<div class="td-search-wrapper">
+	<div id="td-top-search">
+		<!-- Search -->
+		<div class="header-search-wrap">
+			<div class="extra">
+				<ul style="list-style:none">
+					<li style="display:inline-block;vertical-align:middle"><a href="https://su.org/" target="_blank" style="color:#fff">Singularity Group</a></li>
+					<li style="display:inline-block;vertical-align:middle"><a href="https://su.org/community" target="_blank" style="color:#fff">Singularity Community</a></li>
+										<li class="td-drop-down-share">
+						<span class="td-social-icon-wrap">
+							<a target="_blank" href="http://www.facebook.com/singularityhub" title="Facebook">
+								<i class="td-icon-font td-icon-facebook" style="color:#fff;font-size:20px"></i>
+							</a>
+						</span>
+						<span class="td-social-icon-wrap">
+							<a target="_blank" href="https://plus.google.com/+singularityhub" title="Google+">
+								<i class="td-icon-font td-icon-googleplus" style="color:#fff;font-size:20px"></i>
+							</a>
+						</span>
+						<span class="td-social-icon-wrap">
+							<a target="_blank" href="https://www.instagram.com/singularityhub/" title="Instagram">
+								<i class="td-icon-font td-icon-instagram" style="color:#fff;font-size:20px"></i>
+							</a>
+						</span>
+						<span class="td-social-icon-wrap">
+							<a target="_blank" href="https://singularityhub.com/feed/" title="RSS">
+								<i class="td-icon-font td-icon-rss" style="color:#fff;font-size:20px"></i>
+							</a>
+						</span>
+						<span class="td-social-icon-wrap">
+							<a target="_blank" href="https://twitter.com/singularityhub" title="Twitter">
+								<i class="td-icon-font td-icon-twitter" style="color:#fff;font-size:20px"></i>
+							</a>
+						</span>
+						<span class="td-social-icon-wrap">
+							<a target="_blank" href="https://www.youtube.com/user/singularityu" title="Youtube">
+								<i class="td-icon-font td-icon-youtube" style="color:#fff;font-size:20px"></i>
+							</a>
+						</span>
+						<span class="td-social-icon-wrap">
+							<a target="_blank" href="https://singularityhub.com/newsletter/" title="Mail">
+								<i class="td-icon-font td-icon-mail" style="color:#fff;font-size:20px"></i>
+							</a>
+						</span>
+					</li>
+					<li style="display:inline-block;vertical-align:middle"><a href="#" id="td-header-share-button"><img src="How%20Quantum%20Computers%20Can%20Be%20Used%20to%20Build%20Better%20Quantum%20Computers_files/share-white.svg" class="icon-share" style="vertical-align:middle"></a></li>
+				</ul>
+			</div>
+			<div class="dropdown header-search" style="display:inline-block;vertical-align:middle">
+				<a id="td-header-search-button" href="#" role="button" class="dropdown-toggle " data-toggle="dropdown"><i class="td-icon-search"></i></a>
+				<a id="td-header-search-button-mob" href="#" role="button" class="dropdown-toggle " data-toggle="dropdown"><i class="td-icon-search"></i></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="header-search-wrap">
+	<div class="dropdown header-search">
+		<div class="td-drop-down-search" aria-labelledby="td-header-search-button">
+			<form method="get" class="td-search-form" action="https://singularityhub.com/">
+				<div role="search" class="td-head-form-search-wrap">
+					<input id="td-header-search" type="text" name="s" autocomplete="off"><input class="wpb_button wpb_btn-inverse btn" type="submit" id="td-header-search-top" value="Search">
+				</div>
+			</form>
+			<div id="td-aj-search"></div>
+		</div>
+	</div>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="td-banner-wrap-full">
+        <div class="td-container-header td-header-row td-header-header">
+            <div class="td-header-sp-recs">
+                <div class="td-header-rec-wrap">
+    
+</div>            </div>
+        </div>
+    </div>
+
+</div>
+
+<a href="https://singularityhub.com/newsletter"><div id="header-subscribe">Subscribe to our newsletter</div></a><article id="post-142605" class="td-post-template-3 post-142605 post type-post status-publish format-standard has-post-thumbnail hentry category-topics tag-computing" itemscope="" itemtype="https://schema.org/Article">
+    <div class="td-post-header td-container">
+        <div class="td-crumb-container"></div>
+        <div class="td-post-header-holder td-image-gradient">
+            <div class="td-post-featured-image"><img class="entry-thumb" src="How%20Quantum%20Computers%20Can%20Be%20Used%20to%20Build%20Better%20Quantum%20Computers_files/quantum-computer-3679893_1280.jpg" alt="hot qubits quantum computer" title="quantum-computer-3679893_1280" width="1068" height="601"></div>
+            <header class="td-post-title">
+                <ul class="td-category"><li class="entry-category"><a href="https://singularityhub.com/category/topics/">Topics</a></li></ul>                <h1 class="entry-title">How Quantum Computers Can Be Used to Build Better Quantum Computers</h1>
+
+                
+
+                <div class="td-module-meta-info">
+                    <div class="td-post-author-name"><div class="td-author-by">By</div> <a href="https://singularityhub.com/author/egent/" title="Posts by Edd Gent" class="author url fn" rel="author">Edd Gent</a><div class="td-author-line"> - </div> </div>                    <span class="td-post-date td-post-date-no-dot"><time class="entry-date updated td-module-date" datetime="2021-10-04T07:00:33+00:00">Oct 04, 2021</time></span>                    <div class="td-post-views"><i class="td-icon-views"></i><span class="td-nr-views-142605">4,089</span></div>                                    </div>
+
+            </header>
+        </div>
+    </div>
+
+    <div class="td-container">
+        <div class="td-pb-row">
+                                <div class="td-pb-span8 td-main-content" role="main">
+                        <div class="td-ss-main-content">
+                            
+    
+    <div class="td-post-content">
+                <p class="western"><span lang="en-GB">Using computer 
+simulations to design new chips played a crucial role in the rapid 
+improvements in processor performance we’ve experienced in recent 
+decades. Now Chinese researchers have extended the approach to the 
+quantum world.</span></p>
+<p class="western"><span lang="en-GB">Electronic design automation tools
+ started to become commonplace in the early 1980s as the complexity of 
+processors rose exponentially, and today they are an indispensable tool 
+for chip designers.</span></p>
+<p class="western"><span lang="en-GB">Mor</span><span lang="en-GB">e recently, Google has been turbocharging the approach by using artificial intelligence to </span><a href="https://singularityhub.com/2021/06/15/a-google-ai-designed-a-new-computer-chip-in-hours-and-its-fast-and-adaptable/"><span lang="en-GB">design the next generation of its AI chips</span></a><span lang="en-GB">. This holds the promise of setting o</span><span lang="en-GB">f</span><span lang="en-GB">f a process of recursive self-improvement that could lead to rapid performance <a href="https://singularityhub.com/2021/04/25/the-worlds-biggest-ai-chip-now-comes-stock-with-2-6-trillion-transistors/">gains for AI</a>.</span></p>
+<p class="western"><span lang="en-GB">Now, </span><a href="https://www.newscientist.com/article/2290563-quantum-computer-helps-to-design-a-better-quantum-computer/?utm_source=nsday&amp;utm_medium=email&amp;utm_campaign=NSDAY_210921"><em><span lang="en-GB">New Scientist</span></em><span lang="en-GB"> has reported</span></a><span lang="en-GB"> on a team from the University of Science and Technology of China in Shanghai </span><span lang="en-GB">that</span><span lang="en-GB"> has applied the same ideas to another emerging field of computing: quantum processors. In a </span><a href="https://arxiv.org/abs/2109.00994"><span lang="en-GB">paper posted to the<em> arXiv</em> pre-print server</span></a><span lang="en-GB">, the</span><span lang="en-GB"> researchers describe how they used a quantum computer to design a new type of qubit that significantly outperform</span><span lang="en-GB">ed</span><span lang="en-GB"> their previous design.</span></p>
+<p class="western">“<span lang="en-GB">Simulations of high-complexity 
+quantum systems, which are intractable for classical computers, can be 
+efficiently done with quantum computers,” the authors wr</span><span lang="en-GB">o</span><span lang="en-GB">te. “Our work opens the way to designing advanced quantum processors using existing quantum computing resources.”</span></p>
+<p class="western"><span lang="en-GB">At the heart of the idea is the 
+fact that the complexity of quantum systems grows exponentially as they 
+increase in size. As a result, even the most powerful supercomputers 
+struggle to simulate fairly small quantum systems.</span></p>
+<p class="western"><span lang="en-GB">This was the basis for Google’s groundbreak</span><span lang="en-GB">ing </span><a href="https://www.nature.com/articles/d41586-019-03213-z"><span lang="en-GB">display of “quantum supremacy”</span></a><span lang="en-GB"> in </span><span lang="en-GB">2019.
+ The company’s researchers used a 53-qubit processor to run a random 
+quantum circuit a million times and showed that it would take roughly 
+10,000 year</span><span lang="en-GB">s</span><span lang="en-GB"> to simulate the experiment on the world’s fastest supercomputer.</span></p>
+<p class="western"><span lang="en-GB">This means that using classical 
+computers to help in the design of new quantum computers is likely to 
+hit fundamental limits pretty quickly. Using a quantum computer, 
+however, sidesteps the problem because it can exploit the same oddities 
+of the quantum world that make the problem complex in the first place.</span></p>
+<p class="western"><span lang="en-GB">This is exactly what the Chinese researchers did. They used an algorithm called a <a href="https://towardsdatascience.com/the-variational-quantum-eigensolver-explained-adcbc9659c3a">variational quantum eigensolver</a>
+ to simulate the kind of superconducting electronic circuit found at the
+ heart of a quantum computer. This was used to explore what happens when
+ certain energy levels in the circuit are altered.</span></p>
+<p class="western"><span lang="en-GB">Normally this kind of experiment 
+would require them to build large numbers of physical prototypes and 
+test them, but instead the team was able to rapidly model the impact of 
+the changes. The upshot was that the researchers discovered a new type 
+of qubit that was more powerful than the one they were already using.</span></p>
+<p class="western"><span lang="en-GB">Any two-level quantum system can act as a qubit, but most superconducting quantum computers use <a href="https://qiskit.org/textbook/ch-quantum-hardware/transmon-physics.html">transmons</a>,
+ which encode quantum states into the oscillations of electrons. By 
+tweaking the energy levels of their simulated quantum circuit, the 
+researchers were able to discover a new qubit design they dubbed a 
+plasonium.</span></p>
+<p class="western"><span lang="en-GB">It is less than half the size of a
+ transmon, and when the researchers fabricated it they found that it 
+holds its quantum state for longer and is less prone to errors. It still
+ works on similar principles to the transmon, so it’s possible to 
+manipulate it using the same control technologies.</span></p>
+<p class="western"><span lang="en-GB">The researchers point out that this is only a first prototype, so with further optimi</span><span lang="en-GB">z</span><span lang="en-GB">ation
+ and the integration of recent progress in new superconducting materials
+ and surface treatment methods they expect performance to increase even 
+more.</span></p>
+<p class="western"><span lang="en-GB">But the new qubit the researchers 
+have designed is probably not their most significant contribution. By 
+demonstrating that even today’s rudimentary quantum computers can help 
+design future devices, they’ve opened the door to a virtuous cycle that 
+could significantly speed innovation in this field.</span></p>
+<p><em>Image Credit: <a href="https://pixabay.com/users/TheDigitalArtist-202249/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3679893">Pete Linforth</a>&nbsp;from&nbsp;<a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3679893">Pixabay</a></em></p>
+    </div>
+
+
+    <footer>
+                
+        <div class="td-post-source-tags">
+                        <ul class="td-tags td-post-small-box clearfix"><li><span>TAGS</span></li><li><a href="https://singularityhub.com/tag/computing/">Computing</a></li></ul>        </div>
+
+                        <div class="author-box-wrap"><div class="td-pb-row"><div class="td-pb-span4"><a href="https://singularityhub.com/author/egent/"><img alt="Edd Gent" src="How%20Quantum%20Computers%20Can%20Be%20Used%20to%20Build%20Better%20Quantum%20Computers_files/Edd-Gent_avatar_1481763853.jpg" class="avatar avatar-300 photo" width="300" height="300"></a><div class="desc"><div class="td-author-name vcard author"><span class="fn"><a href="https://singularityhub.com/author/egent/">Edd Gent</a></span></div></div></div><div class="td-pb-span8"><div class="td-author-description">I
+ am a freelance science and technology writer based in Bangalore, India.
+ My main areas of interest are engineering, computing and biology, with a
+ particular focus on the intersections between the three.</div><div class="td-author-social"><div style="margin-bottom:5px"><a href="https://singularityhub.com/author/egent/" class="author--button">Learn More</a></div><h4>Follow Edd:</h4>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="https://www.linkedin.com/in/edd-gent-ab778372/" title="Linkedin">
+                <i class="td-icon-font td-icon-linkedin"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="https://twitter.com/eddythegent" title="Twitter">
+                <i class="td-icon-font td-icon-twitter"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="http://www.eddgent.com/" title="">
+                <i class="td-icon-font td-icon-url"></i>
+            </a>
+        </span></div><div class="clearfix"></div></div></div></div><!-- This site is converting visitors into subscribers and customers with OptinMonster - http://optinmonster.com :: Campaign Title: Homepage In-Line - Wildly Curious? --><div id="om-fat0h4oskzgmjl8h-holder"></div><script>var fat0h4oskzgmjl8h,fat0h4oskzgmjl8h_poll=function(){var r=0;return function(n,l){clearInterval(r),r=setInterval(n,l)}}();!function(e,t,n){if(e.getElementById(n)){fat0h4oskzgmjl8h_poll(function(){if(window['om_loaded']){if(!fat0h4oskzgmjl8h){fat0h4oskzgmjl8h=new OptinMonsterApp();return fat0h4oskzgmjl8h.init({"u":"23547.432734","staging":0,"dev":0,"beta":0});}}},25);return;}var d=false,o=e.createElement(t);o.id=n,o.src="//a.optnmnstr.com/app/js/api.min.js",o.onload=o.onreadystatechange=function(){if(!d){if(!this.readyState||this.readyState==="loaded"||this.readyState==="complete"){try{d=om_loaded=true;fat0h4oskzgmjl8h=new OptinMonsterApp();fat0h4oskzgmjl8h.init({"u":"23547.432734","staging":0,"dev":0,"beta":0});o.onload=o.onreadystatechange=null;}catch(t){}}}};(document.getElementsByTagName("head")[0]||document.documentElement).appendChild(o)}(document,"script","omapi-script");</script><!-- / OptinMonster -->        <span style="display: none;" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><meta itemprop="name" content="Edd Gent"></span><meta itemprop="datePublished" content="2021-10-04T07:00:33+00:00"><meta itemprop="dateModified" content="2021-10-04T07:03:09-07:00"><meta itemscope="" itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://singularityhub.com/2021/10/04/how-quantum-computers-can-be-used-to-build-better-quantum-computers/"><span style="display: none;" itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization"><span style="display: none;" itemprop="logo" itemscope="" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://singularityhub.com/wp-content/uploads/2021/09/Singularity-Group-Logo-White-300x94.png"></span><meta itemprop="name" content="Singularity Hub"></span><meta itemprop="headline " content="How Quantum Computers Can Be Used to Build Better Quantum Computers"><span style="display: none;" itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://singularityhub.com/wp-content/uploads/2020/04/quantum-computer-3679893_1280-900x506.jpg"><meta itemprop="width" content="696"><meta itemprop="height" content="391"></span>    </footer>
+
+    <div class="td_block_wrap td_block_related_posts td_uid_3_617f3190433ee_rand td_with_ajax_pagination td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_3_617f3190433ee"><script>var block_td_uid_3_617f3190433ee = new tdBlock();
+block_td_uid_3_617f3190433ee.id = "td_uid_3_617f3190433ee";
+block_td_uid_3_617f3190433ee.atts = '{"limit":3,"sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"next_prev","header_color":"","header_text_color":"","ajax_pagination_infinite_stop":"","td_column_number":3,"td_ajax_preloading":"","td_ajax_filter_type":"td_custom_related","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_3_617f3190433ee_rand","el_class":"","offset":"","css":"","tdc_css":"","tdc_css_class":"td_uid_3_617f3190433ee_rand","tdc_css_class_style":"td_uid_3_617f3190433ee_rand_style","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":"","block_template_id":""}';
+block_td_uid_3_617f3190433ee.td_column_number = "3";
+block_td_uid_3_617f3190433ee.block_type = "td_block_related_posts";
+block_td_uid_3_617f3190433ee.post_count = "3";
+block_td_uid_3_617f3190433ee.found_posts = "5964";
+block_td_uid_3_617f3190433ee.header_color = "";
+block_td_uid_3_617f3190433ee.ajax_pagination_infinite_stop = "";
+block_td_uid_3_617f3190433ee.max_num_pages = "1988";
+tdBlocksArray.push(block_td_uid_3_617f3190433ee);
+</script><div class="td-block-title-wrap"><a id="td_uid_4_617f3190474bd" class="td-related-left td-cur-simple-item" data-td_filter_value="" data-td_block_id="td_uid_3_617f3190433ee" href="#"><h4 class="block-title"><span>Latest</span></h4></a></div><div id="td_uid_3_617f3190433ee" class="td_block_inner">
+
+	<div class="td-related-row">
+
+	<div class="td-related-span4">
+
+        <div class="td_module_related_posts td-animation-stack td_mod_related_posts">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://singularityhub.com/2021/10/31/animal-evolution-fossil-discovery-hints-first-animals-lived-nearly-900-million-years-ago/" class="background-image" rel="bookmark" title="Animal Evolution: Fossil Discovery Hints First Animals Lived Nearly 900 Million Years Ago" style="display:block;width:100%;height:100%;background:#000 url(https://singularityhub.com/wp-content/uploads/2021/10/890-million-year-old-sponge-fossil-1-900x507.jpeg) no-repeat scroll center center / 175% auto"></a></div>                            </div>
+            <div class="item-details">
+                <h3 class="entry-title td-module-title"><a href="https://singularityhub.com/2021/10/31/animal-evolution-fossil-discovery-hints-first-animals-lived-nearly-900-million-years-ago/" rel="bookmark" title="Animal Evolution: Fossil Discovery Hints First Animals Lived Nearly 900 Million Years Ago">Animal Evolution: Fossil Discovery Hints First Animals Lived Nearly 900 Million Years Ago</a></h3>            </div>
+        </div>
+        
+	</div> <!-- ./td-related-span4 -->
+
+	<div class="td-related-span4">
+
+        <div class="td_module_related_posts td-animation-stack td_mod_related_posts">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://singularityhub.com/2021/10/30/this-weeks-awesome-tech-stories-from-around-the-web-through-october-30/" class="background-image" rel="bookmark" title="This Week’s Awesome Tech Stories From Around the Web (Through October 30)" style="display:block;width:100%;height:100%;background:#000 url(https://singularityhub.com/wp-content/uploads/2021/10/black-and-white-architecture-high-rise-blue-sky-900x506.jpeg) no-repeat scroll center center / 175% auto"></a></div>                            </div>
+            <div class="item-details">
+                <h3 class="entry-title td-module-title"><a href="https://singularityhub.com/2021/10/30/this-weeks-awesome-tech-stories-from-around-the-web-through-october-30/" rel="bookmark" title="This Week’s Awesome Tech Stories From Around the Web (Through October 30)">This Week’s Awesome Tech Stories From Around the Web (Through October 30)</a></h3>            </div>
+        </div>
+        
+	</div> <!-- ./td-related-span4 -->
+
+	<div class="td-related-span4">
+
+        <div class="td_module_related_posts td-animation-stack td_mod_related_posts">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://singularityhub.com/2021/10/29/this-spooky-bizarre-haunted-house-was-generated-by-an-ai/" class="background-image" rel="bookmark" title="This Spooky, Bizarre Haunted House Was Generated by an AI" style="display:block;width:100%;height:100%;background:#000 url(https://singularityhub.com/wp-content/uploads/2021/10/a_haunted_victorian_house-900x506.jpg) no-repeat scroll center center / 175% auto"></a></div>                            </div>
+            <div class="item-details">
+                <h3 class="entry-title td-module-title"><a href="https://singularityhub.com/2021/10/29/this-spooky-bizarre-haunted-house-was-generated-by-an-ai/" rel="bookmark" title="This Spooky, Bizarre Haunted House Was Generated by an AI">This Spooky, Bizarre Haunted House Was Generated by an AI</a></h3>            </div>
+        </div>
+        
+	</div> <!-- ./td-related-span4 --></div><!--./row-fluid--></div><div class="td-next-prev-wrap"><a href="#" class="td-ajax-prev-page ajax-page-disabled" id="prev-page-td_uid_3_617f3190433ee" data-td_block_id="td_uid_3_617f3190433ee"><i class="td-icon-font td-icon-menu-left"></i></a><a href="#" class="td-ajax-next-page" id="next-page-td_uid_3_617f3190433ee" data-td_block_id="td_uid_3_617f3190433ee"><i class="td-icon-font td-icon-menu-right"></i></a></div></div> <!-- ./block -->    <div class="td_block_wrap td_block_related_posts td_uid_5_617f319049547_rand td_with_ajax_pagination td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_5_617f319049547"><script>var block_td_uid_5_617f319049547 = new tdBlock();
+block_td_uid_5_617f319049547.id = "td_uid_5_617f319049547";
+block_td_uid_5_617f319049547.atts = '{"limit":3,"sort":"","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"","category_ids":"","custom_title":"","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"next_prev","header_color":"","header_text_color":"","ajax_pagination_infinite_stop":"","td_column_number":3,"td_ajax_preloading":"","td_ajax_filter_type":"td_custom_related","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_uid_5_617f319049547_rand","el_class":"","offset":"","css":"","tdc_css":"","tdc_css_class":"td_uid_5_617f319049547_rand","tdc_css_class_style":"td_uid_5_617f319049547_rand_style","live_filter":"cur_post_same_tags","live_filter_cur_post_id":142605,"live_filter_cur_post_author":"71642","block_template_id":""}';
+block_td_uid_5_617f319049547.td_column_number = "3";
+block_td_uid_5_617f319049547.block_type = "td_block_related_posts";
+block_td_uid_5_617f319049547.post_count = "3";
+block_td_uid_5_617f319049547.found_posts = "921";
+block_td_uid_5_617f319049547.header_color = "";
+block_td_uid_5_617f319049547.ajax_pagination_infinite_stop = "";
+block_td_uid_5_617f319049547.max_num_pages = "307";
+tdBlocksArray.push(block_td_uid_5_617f319049547);
+</script><div class="td-block-title-wrap"><a id="td_uid_6_617f31904bfe5" class="td-related-left td-cur-simple-item" data-td_filter_value="" data-td_block_id="td_uid_5_617f319049547" href="#"><h4 class="block-title"><span>RELATED</span></h4></a></div><div id="td_uid_5_617f319049547" class="td_block_inner">
+
+	<div class="td-related-row">
+
+	<div class="td-related-span4">
+
+        <div class="td_module_related_posts td-animation-stack td_mod_related_posts">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://singularityhub.com/2021/10/11/intels-brain-inspired-loihi-2-chip-can-hold-a-million-artificial-neurons/" class="background-image" rel="bookmark" title="Intel’s Brain-Inspired Loihi 2 Chip Can Hold a Million Artificial Neurons" style="display:block;width:100%;height:100%;background:#000 url(https://singularityhub.com/wp-content/uploads/2021/10/intel-loihi-2-chip-900x506.jpg) no-repeat scroll center center / 175% auto"></a></div>                            </div>
+            <div class="item-details">
+                <h3 class="entry-title td-module-title"><a href="https://singularityhub.com/2021/10/11/intels-brain-inspired-loihi-2-chip-can-hold-a-million-artificial-neurons/" rel="bookmark" title="Intel’s Brain-Inspired Loihi 2 Chip Can Hold a Million Artificial Neurons">Intel’s Brain-Inspired Loihi 2 Chip Can Hold a Million Artificial Neurons</a></h3>            </div>
+        </div>
+        
+	</div> <!-- ./td-related-span4 -->
+
+	<div class="td-related-span4">
+
+        <div class="td_module_related_posts td-animation-stack td_mod_related_posts">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://singularityhub.com/2021/08/27/cerebras-upgrades-trillion-transistor-chip-to-train-brain-scale-ai/" class="background-image" rel="bookmark" title="Cerebras Upgrades Trillion-Transistor Chip to Train ‘Brain-Scale’ AI" style="display:block;width:100%;height:100%;background:#000 url(https://singularityhub.com/wp-content/uploads/2021/08/cerebras-chip-AI-900x506.jpg) no-repeat scroll center center / 175% auto"></a></div>                            </div>
+            <div class="item-details">
+                <h3 class="entry-title td-module-title"><a href="https://singularityhub.com/2021/08/27/cerebras-upgrades-trillion-transistor-chip-to-train-brain-scale-ai/" rel="bookmark" title="Cerebras Upgrades Trillion-Transistor Chip to Train ‘Brain-Scale’ AI">Cerebras Upgrades Trillion-Transistor Chip to Train ‘Brain-Scale’ AI</a></h3>            </div>
+        </div>
+        
+	</div> <!-- ./td-related-span4 -->
+
+	<div class="td-related-span4">
+
+        <div class="td_module_related_posts td-animation-stack td_mod_related_posts">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://singularityhub.com/2021/08/22/why-bother-calculating-pi-to-62-8-trillion-digits-its-both-useless-and-fascinating/" class="background-image" rel="bookmark" title="Why Bother Calculating Pi to 62.8 Trillion Digits? It’s Both Useless and&nbsp;Fascinating" style="display:block;width:100%;height:100%;background:#000 url(https://singularityhub.com/wp-content/uploads/2021/08/pi-math-cobblestones-1-900x506.jpeg) no-repeat scroll center center / 175% auto"></a></div>                            </div>
+            <div class="item-details">
+                <h3 class="entry-title td-module-title"><a href="https://singularityhub.com/2021/08/22/why-bother-calculating-pi-to-62-8-trillion-digits-its-both-useless-and-fascinating/" rel="bookmark" title="Why Bother Calculating Pi to 62.8 Trillion Digits? It’s Both Useless and&nbsp;Fascinating">Why Bother Calculating Pi to 62.8 Trillion Digits? It’s Both Useless and&nbsp;Fascinating</a></h3>            </div>
+        </div>
+        
+	</div> <!-- ./td-related-span4 --></div><!--./row-fluid--></div><div class="td-next-prev-wrap"><a href="#" class="td-ajax-prev-page ajax-page-disabled" id="prev-page-td_uid_5_617f319049547" data-td_block_id="td_uid_5_617f319049547"><i class="td-icon-font td-icon-menu-left"></i></a><a href="#" class="td-ajax-next-page" id="next-page-td_uid_5_617f319049547" data-td_block_id="td_uid_5_617f319049547"><i class="td-icon-font td-icon-menu-right"></i></a></div></div> <!-- ./block -->    
+                        </div>
+                    </div>
+                    <div class="td-pb-span4 td-main-sidebar" role="complementary">
+                        <div class="td-ss-main-sidebar">
+                            <script type="text/javascript" src="How%20Quantum%20Computers%20Can%20Be%20Used%20to%20Build%20Better%20Quantum%20Computers_files/jquery_002.js"></script>
+<link rel="stylesheet" type="text/css" href="How%20Quantum%20Computers%20Can%20Be%20Used%20to%20Build%20Better%20Quantum%20Computers_files/jquery.css">
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$('[data-fancybox]').fancybox({touch: false});
+	});
+</script>
+
+<style>
+.republish-textarea {
+	width: 100%;
+	padding: 0.8rem;
+	background: #f0f0f0;
+	border: none;
+	resize: none;
+	outline: none;
+	height: 15rem;
+}
+.bt-republish {
+	font-family: proxima-nova, sans-serif;
+	letter-spacing: 2px;
+	color: #fff;
+	text-align: center;
+	display: block;
+	background-color: #2A65AF;
+	padding: 10px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	font-size: 1em;
+	font-weight: bold;
+}
+.republish-icons {
+	text-align: center;
+	margin-bottom: 10px;
+}
+	.republish-icons .icon {
+		display: inline-block;
+		margin: 0 15px;
+	}
+</style>
+<aside class="widget_text td_block_template_1 widget widget_custom_html"><div class="textwidget custom-html-widget"><div style="background-color: #091C2F;padding:25px; color: white;">
+	
+<div style="text-align: left;"><strong><span style=""><span style="font-size: 26px; margin-bottom: 1rem;display:block;">Don't miss a trend.</span></span></strong></div>
+	
+<div style="text-align: left;font-weight: 300;margin-bottom:0.75rem;font-size:18px;">Get Hub delivered to your inbox</div>
+
+	<!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+<script charset="utf-8" type="text/javascript" src="How%20Quantum%20Computers%20Can%20Be%20Used%20to%20Build%20Better%20Quantum%20Computers_files/v2.js"></script>
+<script data-hubspot-rendered="true">
+  hbspt.forms.create({
+	portalId: "7432255",
+	formId: "139a56cc-bec0-45c8-8189-0436f80ff6bc",
+	sfdcCampaignId: "7012A000001Rq61QAC"
+});
+</script><div class="hbspt-form" id="hbspt-form-1635725981453-4910235153"><iframe id="hs-form-iframe-0" class="hs-form-iframe" scrolling="no" style="width: 100%; position: static; border: medium none; display: block; overflow: hidden; height: 236px;" width="100%" height="236"></iframe></div>
+</div></div></aside><div class="td_block_wrap td_block_5 td_block_widget td_uid_7_617f31904d927_rand td-pb-border-top td_block_template_1 td-column-1 td_block_padding" data-td-block-uid="td_uid_7_617f31904d927"><script>var block_td_uid_7_617f31904d927 = new tdBlock();
+block_td_uid_7_617f31904d927.id = "td_uid_7_617f31904d927";
+block_td_uid_7_617f31904d927.atts = '{"limit":"1","sort":"featured","post_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","category_id":"1","category_ids":"","custom_title":"","custom_url":"","show_child_cat":"","sub_cat_ajax":"","ajax_pagination":"","header_color":"#","header_text_color":"#","ajax_pagination_infinite_stop":"","td_column_number":1,"td_ajax_preloading":"","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","color_preset":"","border_top":"","class":"td_block_widget td_uid_7_617f31904d927_rand","el_class":"","offset":"1","css":"","tdc_css":"","tdc_css_class":"td_uid_7_617f31904d927_rand","tdc_css_class_style":"td_uid_7_617f31904d927_rand_style","live_filter":"","live_filter_cur_post_id":"","live_filter_cur_post_author":"","block_template_id":""}';
+block_td_uid_7_617f31904d927.td_column_number = "1";
+block_td_uid_7_617f31904d927.block_type = "td_block_5";
+block_td_uid_7_617f31904d927.post_count = "1";
+block_td_uid_7_617f31904d927.found_posts = "894";
+block_td_uid_7_617f31904d927.header_color = "#";
+block_td_uid_7_617f31904d927.ajax_pagination_infinite_stop = "";
+block_td_uid_7_617f31904d927.max_num_pages = "893";
+tdBlocksArray.push(block_td_uid_7_617f31904d927);
+</script><div class="td-block-title-wrap"></div><div id="td_uid_7_617f31904d927" class="td_block_inner">
+
+	<div class="td-block-span12">
+
+        <div class="td_module_3 td_module_wrap td-animation-stack">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://singularityhub.com/2021/07/18/japan-sets-new-record-for-internet-speed-at-319-terabits-per-second/" class="background-image" rel="bookmark" title="Japan Sets New Record for Internet Speed at 319 Terabits per Second" style="display:block;width:100%;height:100%;background:#000 url(https://singularityhub.com/wp-content/uploads/2021/07/colorful-lines-time-lapse-lights-speed-900x506.jpeg) no-repeat scroll center center / 175% auto"></a></div>                            </div>
+            <h3 class="entry-title td-module-title"><a href="https://singularityhub.com/2021/07/18/japan-sets-new-record-for-internet-speed-at-319-terabits-per-second/" rel="bookmark" title="Japan Sets New Record for Internet Speed at 319 Terabits per Second">Japan Sets New Record for Internet Speed at 319 Terabits per Second</a></h3>
+            
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span12 --></div></div> <!-- ./block -->                        </div>
+                    </div>
+                            </div> <!-- /.td-pb-row -->
+    </div> <!-- /.td-container -->
+</article> <!-- /.post -->
+
+
+<!-- Instagram -->
+
+
+
+<!-- Footer -->
+<div class="td-footer-wrapper td-footer-template-14">
+    <div class="td-pb-row">
+        <div class="td-pb-span4 blue" style="background-color:#2167B0;height:0.75rem"></div>
+        <div class="td-pb-span4 orange" style="background-color:#ED6425;height:0.75rem"></div>
+        <div class="td-pb-span4 red" style="background-color:#DE2763;height:0.75rem"></div>
+    </div>
+    <div class="td-container td-footer-bottom-full">
+        <div class="td-pb-row">
+            <div class="footer-social-wrap td-social-style-2">
+                
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="https://www.facebook.com/singularityhub" title="Facebook">
+                <i class="td-icon-font td-icon-facebook"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="https://plus.google.com/+singularityhub" title="Google+">
+                <i class="td-icon-font td-icon-googleplus"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="https://www.instagram.com/singularityhub/" title="Instagram">
+                <i class="td-icon-font td-icon-instagram"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="https://singularityhub.com/feed/" title="RSS">
+                <i class="td-icon-font td-icon-rss"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="https://twitter.com/singularityhub" title="Twitter">
+                <i class="td-icon-font td-icon-twitter"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="https://www.youtube.com/user/singularityu?sub_confirmation=1" title="Youtube">
+                <i class="td-icon-font td-icon-youtube"></i>
+            </a>
+        </span>            </div>
+        </div>
+        <div class="td-pb-row">
+            <div class="td-pb-span12" style="text-align:center;margin-top:20px;margin-bottom:20px">
+                <a href="https://itunes.apple.com/us/app/singularityu-hub/id1204444542" target="_blank"><img src="How%20Quantum%20Computers%20Can%20Be%20Used%20to%20Build%20Better%20Quantum%20Computers_files/icon-appstore.png" style="height:40px"></a>
+
+                <a href="https://play.google.com/store/apps/details?id=org.singularityu.suhub.android&amp;utm_source=hub&amp;utm_campaign=footer&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank"><img src="How%20Quantum%20Computers%20Can%20Be%20Used%20to%20Build%20Better%20Quantum%20Computers_files/icon-googleplay.png" style="height:40px"></a>
+            </div>
+        </div>
+        <div class="td-pb-row">
+            <div class="td-pb-span3"><aside class="footer-logo-wrap" style="margin-bottom:20px"><a href="https://su.org/"><img src="How%20Quantum%20Computers%20Can%20Be%20Used%20to%20Build%20Better%20Quantum%20Computers_files/Singularity-Group-Logo-White-300x94.png" alt="Singularity Group" title=""></a></aside></div><div class="td-pb-span3 footer-menu"><aside class="footer-text-wrap widget" style="font-size:14px;margin-bottom:0"><ul class="td-pb-padding-side" style="margin-top:0"><li style="font-size:15px;letter-spacing:2px;text-transform:uppercase">Singularity Hub</li><li><a href="https://singularityhub.com/about/">About</a></li><li><a href="https://singularityhub.com/tag/creative-commons/">Creative Commons</a></li><li><a href="https://singularityhub.com/pitch-us/">Pitch Us</a></li><li><a href="https://singularityhub.com/contact-us/">Contact Us</a></li><li><a href="https://su.org/terms-of-use/">Terms of Use</a></li><li><a href="https://su.org/privacy-policy/">Privacy Policy</a></li></ul></aside></div><div class="td-pb-span3 footer-pages"><aside class="footer-text-wrap widget" style="font-size:14px;margin-bottom:20px"><ul class="td-pb-padding-side" style="margin-top:0"><li style="font-size:15px;letter-spacing:2px;text-transform:uppercase">Singularity Group</li><li><a href="https://su.org/about/">About</a></li><li><a href="https://su.org/experts">Experts</a></li><li><a href="https://su.org/membership">Membership</a></li><li><a href="https://su.org/careers/">Careers</a></li><li><a href="https://su.org/programs/">Programs</a></li><li><a href="https://www.su.org/community">Community</a></li></ul></aside></div><div class="td-pb-span3"><aside class="footer-text-wrap widget"><div class="vc_btn3-container orange" style="padding:0 15px"><p style="font-size:1.125rem;line-height:1.33">Get the latest news from Singularity Hub!</p><a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-square vc_btn3-style-modern vc_btn3-color-warning" href="https://singularityhub.com/newsletter/" style="background-image:none;background-color:#df4563 !important;border:1px solid #fff !important;text-transform:uppercase;padding:5px 10px;letter-spacing:2px;font-size:16px;font-weight:100">Sign Up</a></div></aside></div>        </div>
+    </div>
+</div>
+
+<div class="td-container">
+    <div class="td-pb-row" style="padding:20px 15px;color:#a4a4a4">
+        <p style="font-family:minion-pro,serif;font-size:0.6875rem;margin-bottom:10px;line-height:1.45">Singularity
+ University, Singularity Hub, Singularity Summit, SU Labs, Singularity 
+Labs, Exponential Medicine, Exponential Finance and all associated logos
+ and design elements are trademarks and/or service marks of Singularity 
+Education Group.</p>
+        <p style="font-family:minion-pro,serif;font-size:0.6875rem;margin-bottom:10px;line-height:1.45">© 2021 Singularity Education Group. All Rights Reserved.</p>
+        <p style="font-family:minion-pro,serif;font-size:0.6875rem;margin-bottom:10px;line-height:1.45">Singularity University is not a degree granting institution.</p>
+    </div>
+</div>
+
+<!-- Sub Footer -->
+</div><!--close td-outer-wrap-->
+
+
+
+    <!--
+
+        Theme: Newspaper by tagDiv.com 2017
+        Version: 8.1 (rara)
+        Deploy mode: deploy
+        
+        uid: 617f319056d01
+    -->
+
+    
+<!-- Custom css form theme panel -->
+<style type="text/css" media="screen">
+/* custom css theme panel */
+.wpb_button, .wpb_content_element, ul.wpb_thumbnails-fluid > li {
+    margin-bottom: 32px;
+}
+
+.facebook-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.facebook-responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.two-posts .td_block_inner,
+.two-posts .td_block_inner a,
+.two-posts .td_module_1 a,
+.two-posts .td_module_1 a:hover,
+.two-posts .td_module_1 .td-post-date, 
+.two-posts .td_module_1 .td-post-views {
+    color: #fff !important;
+}
+@media (max-width: 767px) {
+    .two-posts .td_block_wrap {
+        padding-bottom: 0 !important;
+    }
+}
+
+.td-page-header {
+    margin-bottom: 15px;
+}
+
+#tucson-element-privacy-inner-content .fr-green,
+#dallas-element-privacy-inner-content .fr-green {
+    color: #ddd !important;
+}
+#tucson-element-privacy-inner-content .fr-green:hover,
+#dallas-element-privacy-inner-content .fr-green:hover {
+    color: #fff !important;
+}
+</style>
+
+<script type="text/javascript">jQuery(document).on('OptinMonsterLoaded', function( event, data, object ){
+if (data.yes_redirect) {
+var redirectURL = new URL(jQuery('<div />').html(data.yes_redirect).text());
+var redirctURLOrigin = redirectURL.origin;
+var redirectURLPathname = redirectURL.pathname;
+var redirectURLParams = new URLSearchParams(redirectURL.search);
+
+var urlParams = new URLSearchParams(window.location.search);
+console.log(urlParams);
+console.log(urlParams.get('utm_campaign'));
+
+if (urlParams.get('utm_source')) {
+	redirectURLParams.set('utm_source', urlParams.get('utm_source'));
+}
+if (urlParams.get('utm_medium')) {
+    redirectURLParams.set('utm_medium', urlParams.get('utm_medium'));
+}
+if (urlParams.get('utm_campaign')) {
+    redirectURLParams.set('utm_campaign', urlParams.get('utm_campaign'));
+}
+if (urlParams.get('utm_content')) {
+    redirectURLParams.set('utm_content', urlParams.get('utm_content'));
+}
+if (urlParams.get('utm_term')) {
+    redirectURLParams.set('utm_term', urlParams.get('utm_term'));
+}
+
+data.yes_redirect = redirctURLOrigin + redirectURLPathname + '?' + decodeURIComponent(redirectURLParams);
+}
+});
+
+var om_load_webfont = false;</script><script type="text/javascript" src="How%20Quantum%20Computers%20Can%20Be%20Used%20to%20Build%20Better%20Quantum%20Computers_files/devicepx-jetpack.js" id="devicepx-js"></script>
+<script type="text/javascript" src="How%20Quantum%20Computers%20Can%20Be%20Used%20to%20Build%20Better%20Quantum%20Computers_files/tagdiv_theme.js" id="td-site-min-js"></script>
+<script type="text/javascript" src="How%20Quantum%20Computers%20Can%20Be%20Used%20to%20Build%20Better%20Quantum%20Computers_files/comment-reply.js" id="comment-reply-js"></script>
+<script type="text/javascript" src="How%20Quantum%20Computers%20Can%20Be%20Used%20to%20Build%20Better%20Quantum%20Computers_files/marketo.js" id="marketo-js"></script>
+<script type="text/javascript" src="How%20Quantum%20Computers%20Can%20Be%20Used%20to%20Build%20Better%20Quantum%20Computers_files/wp-embed.js" id="wp-embed-js"></script>
+		<script type="text/javascript">
+			if(typeof jQuery != "undefined") {
+					jQuery('.siq-expsearch-icon').each(function(){
+					var searchBox = (jQuery(this).parents('.siq-icon-searchbox-wrap').size() > 0) ? jQuery(this).parents('.siq-icon-searchbox-wrap') : jQuery('.siq-menu-searchbox-wrap') ;
+					var inputBox = searchBox.find('.siq-expsearch-input');
+					
+					jQuery(this).on('click', function () {
+						if (!searchBox.hasClass('siq-search-open')) {
+							searchBox.addClass('siq-search-open');
+							inputBox.focus();
+						} else {
+							searchBox.removeClass('siq-search-open');
+							inputBox.focusout();
+						}
+					});
+					jQuery('body').click(function (evt) {
+						if (evt.target.id == "siq-menu-searchbox-wrap")
+							return;
+						if (jQuery(evt.target).closest('#siq-menu-searchbox-wrap').length || jQuery(evt.target).closest('.siq-icon-searchbox-wrap').length)
+							return;
+
+						if (searchBox.hasClass('siq-search-open')) {
+							searchBox.removeClass('siq-search-open');
+						}
+					});
+				});
+			}
+		</script>
+		
+<!-- JS generated by theme -->
+
+<script>
+    
+
+	
+
+		(function(){
+			var html_jquery_obj = jQuery('html');
+
+			if (html_jquery_obj.length && (html_jquery_obj.is('.ie8') || html_jquery_obj.is('.ie9'))) {
+
+				var path = 'https://singularityhub.com/wp-content/themes/Newspaper/style.css';
+
+				jQuery.get(path, function(data) {
+
+					var str_split_separator = '#td_css_split_separator';
+					var arr_splits = data.split(str_split_separator);
+					var arr_length = arr_splits.length;
+
+					if (arr_length > 1) {
+
+						var dir_path = 'https://singularityhub.com/wp-content/themes/Newspaper';
+						var splited_css = '';
+
+						for (var i = 0; i < arr_length; i++) {
+							if (i > 0) {
+								arr_splits[i] = str_split_separator + ' ' + arr_splits[i];
+							}
+							//jQuery('head').append('<style>' + arr_splits[i] + '</style>');
+
+							var formated_str = arr_splits[i].replace(/\surl\(\'(?!data\:)/gi, function regex_function(str) {
+								return ' url(\'' + dir_path + '/' + str.replace(/url\(\'/gi, '').replace(/^\s+|\s+$/gm,'');
+							});
+
+							splited_css += "<style>" + formated_str + "</style>";
+						}
+
+						var td_theme_css = jQuery('link#td-theme-css');
+
+						if (td_theme_css.length) {
+							td_theme_css.after(splited_css);
+						}
+					}
+				});
+			}
+		})();
+
+	
+	
+</script>
+
+<script src="How%20Quantum%20Computers%20Can%20Be%20Used%20to%20Build%20Better%20Quantum%20Computers_files/ern5pqi.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script><script type="text/javascript" src="How%20Quantum%20Computers%20Can%20Be%20Used%20to%20Build%20Better%20Quantum%20Computers_files/e-202144.js" async="async" defer="defer"></script>
+<script type="text/javascript">
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:8.0',blog:'4183809',post:'142605',tz:'-7',srv:'singularityhub.com'} ]);
+	_stq.push([ 'clickTrackerInit', '4183809', '142605' ]);
+</script>
+
+<!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54331e806b537406" async="async"></script>
+<script type="text/javascript">
+var addthis_share = addthis_share || {};
+    addthis_share =
+    {
+        templates: {
+            twitter: 'This Is How to Invent Radical Solutions to Huge Problems via @SingularityHub {{url}}'
+        }
+    };
+</script>-->
+
+<!-- This site is converting visitors into subscribers and customers with OptinMonster - http://optinmonster.com --><script>var om57ee75bf9cc79,om57ee75bf9cc79_poll=function(){var r=0;return function(n,l){clearInterval(r),r=setInterval(n,l)}}();!function(e,t,n){if(e.getElementById(n)){om57ee75bf9cc79_poll(function(){if(window['om_loaded']){if(!om57ee75bf9cc79){om57ee75bf9cc79=new OptinMonsterApp();return om57ee75bf9cc79.init({"s":"23547.57ee75bf9cc79","staging":0,"dev":0,"beta":0});}}},25);return;}var d=false,o=e.createElement(t);o.id=n,o.src="//a.optnmnstr.com/app/js/api.min.js",o.async=true,o.onload=o.onreadystatechange=function(){if(!d){if(!this.readyState||this.readyState==="loaded"||this.readyState==="complete"){try{d=om_loaded=true;om57ee75bf9cc79=new OptinMonsterApp();om57ee75bf9cc79.init({"s":"23547.57ee75bf9cc79","staging":0,"dev":0,"beta":0});o.onload=o.onreadystatechange=null;}catch(t){}}}};(document.getElementsByTagName("head")[0]||document.documentElement).appendChild(o)}(document,"script","omapi-script");</script><!-- / OptinMonster -->
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"070dd4152b","applicationID":"166695418","transactionName":"ZAQAZ0EAWkBWUEZcX11OI1BHCFtdGEBbW1dfBD1HVgxEX1ZHV2oD","queueTime":0,"applicationTime":350,"atts":"SEMDEQkaSU4=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script>
+<img src="How%20Quantum%20Computers%20Can%20Be%20Used%20to%20Build%20Better%20Quantum%20Computers_files/g.gif" alt=":)" id="wpstats" width="6" height="5"><div class="inject-journal" style="text-align: center; position: relative; z-index: 2147483647;"><div style="position: fixed; width: 0px; height: 0px; top: 0px; right: 0px;"><div style="position: fixed; inset: 0px; visibility: hidden; transform: translateX(464px); transition: transform 100ms cubic-bezier(0, 0, 0, 1) 0s, visibility 100ms ease 0s; will-change: transform, visibility;"><iframe style="width: 100%; height: 100%; display: block;" src="How%20Quantum%20Computers%20Can%20Be%20Used%20to%20Build%20Better%20Quantum%20Computers_files/inject.html" frameborder="0"></iframe></div></div></div></body></html>
